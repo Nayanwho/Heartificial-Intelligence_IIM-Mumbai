@@ -16,15 +16,15 @@ Team **Heartificial Intelligence**, **Indian Institute of Management Mumbai**. R
 | Healthcare use case | [Clinical workflow and intended outcomes](#healthcare-use-case) |
 | Technical stack | [Languages, libraries and interface](#technical-stack) |
 | AI/ML model or framework details | [Calibration, physiology core, LightGBM and evaluation](#aiml-model-and-framework) |
-| Unlisted YouTube demo video | **Pending final video URL** — [demo status and supporting clips](#demo-video) |
+| Unlisted YouTube demo video | [Watch the final demo — 20:41](https://youtu.be/pIliad9_z6Q) · [details and supporting clips](#demo-video) |
 | Open-source licence details | [Apache-2.0 code and CC BY 4.0 source data](#open-source-licence) |
 | Architecture diagram in PDF/PPT format | [Architecture PDF](docs/architecture.pdf) |
 | Presentation covering project details and outcomes | [17-slide PDF](docs/presentation.pdf) · [PowerPoint with speaker notes](docs/presentation.pptx) |
-| Public access to required files and links | [Repository access](#public-access); final YouTube access remains pending |
+| Public access to required files and links | [Public repository and unlisted video](#public-access); no access request required |
 
-The [challenge page](https://unstop.com/hackathons/crp-digital-twin-challenge-2026-happiest-health-1757873) and submission form require the video link in this README. The submission package remains incomplete until that link is added and checked without signing in.
+The required project materials and [final demonstration video](https://youtu.be/pIliad9_z6Q) are linked above. The video runs **20 minutes 41 seconds**, meeting the minimum 20-minute duration stated on the [challenge page](https://unstop.com/hackathons/crp-digital-twin-challenge-2026-happiest-health-1757873); the submission form instead labels its video item “15–20 minute”. The actual duration is disclosed here because those instructions differ.
 
-[Submission audit](docs/submission_audit.md): document checks, test results, dataset provenance and the remaining video step.
+[Submission audit](docs/submission_audit.md): document checks, test results, dataset provenance and final video verification.
 
 **What is measured, what is illustrative, what is proposed**
 
@@ -248,9 +248,10 @@ PDF: [`docs/architecture.pdf`](docs/architecture.pdf). Each component is marked 
 
 ## Demo video
 
-**Status: the final narrated demo is being prepared; its unlisted YouTube URL is pending.**
+**[Watch the final Santulan demonstration on YouTube](https://youtu.be/pIliad9_z6Q)**  
+**Duration:** 20:41 · **Visibility:** Unlisted · **Presenter/channel:** Shubham Patil
 
-The submission form specifies 15–20 minutes and the public challenge page specifies a minimum of 20 minutes. A **20-minute** walkthrough meets both stated durations. The two short supporting clips below do not replace this required video.
+The video presents the project and demonstrates the working clinician dashboard, including live replay. YouTube playback and the Unlisted label were checked on 24 October 2026; its public oEmbed endpoint also returned the correct title and channel without authentication. The full video is 41 seconds longer than the form’s 15–20-minute label and meets the public challenge page’s minimum of 20 minutes. The two short clips below are supporting material.
 
 Two short screen recordings of the dashboard are in `docs/`:
 
@@ -367,4 +368,4 @@ tests/       unit tests
 
 [Public GitHub repository](https://github.com/Nayanwho/Heartificial-Intelligence_IIM-Mumbai).
 
-Code, data, results, fitted models, protocol, the architecture PDF, presentation PDF and PPTX, figures and supporting demo clips are included in this repository. They can be viewed or downloaded without requesting access. The final unlisted YouTube demo link is still pending; its access will be checked after it is supplied.
+Code, data, results, fitted models, protocol, the architecture PDF, presentation PDF and PPTX, figures and supporting demo clips are included in this repository. They can be viewed or downloaded without requesting access. The [final demo video](https://youtu.be/pIliad9_z6Q) is unlisted on YouTube and accessible to anyone with the link. YouTube marks it Unlisted, playback was checked, and its metadata was retrieved without credentials on 24 October 2026.
