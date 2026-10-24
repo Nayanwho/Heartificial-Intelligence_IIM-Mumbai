@@ -1,0 +1,110 @@
+period,patient,days_after_warmup,readings,fingersticks,pairs,offset_mg_dl,group,sulfonylurea,insulin,glp1,age,egfr,raw_lows,corrected_lows,raw_severe_lows,corrected_severe_lows,raw_night_lows,corrected_night_lows
+2000_0_20201230,2000,12.94,1243,32,32,-3.1,"insulin, no sulfonylurea",False,True,False,57,68.0,5,12,1,1,1,3
+2001_0_20201102,2001,11.44,1099,53,45,-4.6,"insulin, no sulfonylurea",False,True,False,69,101.0,0,0,0,0,0,0
+2001_1_20201117,2001,12.94,1243,86,80,-6.4,sulfonylurea,True,True,False,69,103.0,2,5,0,1,2,1
+2002_0_20210513,2002,4.94,475,38,31,0.4,sulfonylurea,True,True,False,57,105.0,0,0,0,0,0,0
+2003_0_20210615,2003,5.08,489,46,38,20.0,"insulin, no sulfonylurea",False,True,False,58,166.0,0,0,0,0,0,0
+2004_0_20211028,2004,4.03,388,39,32,25.0,"insulin, no sulfonylurea",False,True,False,78,113.0,0,0,0,0,0,0
+2005_0_20211201,2005,6.19,595,56,49,19.2,"insulin, no sulfonylurea",False,True,False,67,120.0,0,0,0,0,0,0
+2006_0_20211112,2006,3.99,384,34,27,17.7,"insulin, no sulfonylurea",False,True,False,35,257.0,0,0,0,0,0,0
+2007_0_20220108,2007,7.65,735,65,58,1.1,"insulin, no sulfonylurea",False,True,False,68,80.0,1,1,0,0,1,1
+2008_0_20220118,2008,4.54,437,0,0,7.2,"insulin, no sulfonylurea",False,True,False,61,106.0,1,0,0,0,1,0
+2009_0_20211103,2009,4.14,398,38,32,12.0,"insulin, no sulfonylurea",False,True,False,64,165.0,0,0,0,0,0,0
+2010_0_20220111,2010,4.6,443,46,38,7.2,"insulin, no sulfonylurea",False,True,False,37,223.0,1,0,0,0,0,0
+2011_0_20220123,2011,3.8,366,35,28,1.9,sulfonylurea,True,True,False,56,210.0,0,0,0,0,0,0
+2012_0_20220126,2012,1.99,192,22,15,21.2,"insulin, no sulfonylurea",False,True,True,62,83.0,1,0,0,0,0,0
+2013_0_20220123,2013,2.64,254,23,16,11.1,"insulin, no sulfonylurea",False,True,False,84,123.0,0,0,0,0,0,0
+2014_0_20201224,2014,12.88,1237,92,86,-5.7,"insulin, no sulfonylurea",False,True,False,42,99.0,0,0,0,0,0,0
+2014_1_20210317,2014,12.94,1243,73,67,-2.2,"insulin, no sulfonylurea",False,True,False,42,104.0,0,0,0,0,0,0
+2015_0_20210203,2015,12.94,1243,94,87,-5.7,"insulin, no sulfonylurea",False,True,False,55,102.0,0,0,0,0,0,0
+2015_1_20210219,2015,12.72,1222,34,32,-2.4,"insulin, no sulfonylurea",False,True,False,55,106.0,0,0,0,0,0,0
+2016_0_20201224,2016,12.94,1243,43,39,-4.3,neither,False,False,False,56,,0,0,0,0,0,0
+2017_0_20210102,2017,12.92,1241,9,6,-1.2,"insulin, no sulfonylurea",False,True,False,66,,0,0,0,0,0,0
+2017_1_20201118,2017,12.92,1241,23,19,10.7,"insulin, no sulfonylurea",False,True,False,66,,0,0,0,0,0,0
+2018_0_20210420,2018,11.81,1135,53,47,16.1,"insulin, no sulfonylurea",False,True,False,66,105.0,4,0,0,0,0,0
+2019_0_20210513,2019,6.81,655,53,47,5.7,"insulin, no sulfonylurea",False,True,False,66,106.0,6,3,1,0,3,3
+2020_0_20210423,2020,4.6,443,21,17,17.4,"insulin, no sulfonylurea",False,True,False,61,132.0,0,0,0,0,0,0
+2021_0_20211013,2021,10.81,1039,96,89,13.7,"insulin, no sulfonylurea",False,True,False,78,95.0,4,0,0,0,2,0
+2022_0_20210419,2022,8.83,849,40,40,14.4,"insulin, no sulfonylurea",False,True,False,47,107.0,0,0,0,0,0,0
+2023_0_20210812,2023,4.66,448,39,32,31.2,"insulin, no sulfonylurea",False,True,False,72,104.0,0,0,0,0,0,0
+2024_0_20210429,2024,6.58,633,9,1,6.5,"insulin, no sulfonylurea",False,True,False,67,99.0,3,0,0,0,0,0
+2025_0_20210506,2025,6.92,665,52,46,31.6,"insulin, no sulfonylurea",False,True,False,63,174.0,0,0,0,0,0,0
+2026_0_20210916,2026,10.82,1040,2,1,6.5,"insulin, no sulfonylurea",False,True,False,58,90.0,0,0,0,0,0,0
+2027_0_20210521,2027,10.79,1037,79,72,29.3,"insulin, no sulfonylurea",False,True,False,71,85.0,0,0,0,0,0,0
+2028_0_20210426,2028,7.56,727,57,50,25.9,"insulin, no sulfonylurea",False,True,False,66,57.0,2,0,0,0,0,0
+2029_0_20210526,2029,6.71,645,21,21,41.3,"insulin, no sulfonylurea",False,True,False,63,133.0,7,0,4,0,1,0
+2030_0_20210531,2030,8.84,850,62,55,10.2,sulfonylurea,True,True,False,68,84.0,0,0,0,0,0,0
+2031_0_20210601,2031,8.59,826,66,59,22.6,sulfonylurea,True,True,False,63,145.0,1,0,0,0,0,0
+2032_0_20210727,2032,1.92,185,23,15,12.6,"insulin, no sulfonylurea",False,True,False,47,126.0,0,0,0,0,0,0
+2033_0_20210615,2033,6.55,630,38,32,14.7,"insulin, no sulfonylurea",False,True,True,38,139.0,0,0,0,0,0,0
+2034_0_20210624,2034,3.02,291,23,17,7.2,"insulin, no sulfonylurea",False,True,False,54,121.0,0,0,0,0,0,0
+2035_0_20210629,2035,1.56,151,17,10,11.3,"insulin, no sulfonylurea",False,True,False,78,53.0,0,0,0,0,0,0
+2036_0_20210803,2036,4.52,435,38,30,8.6,"insulin, no sulfonylurea",False,True,False,22,247.0,0,0,0,0,0,0
+2037_0_20201221,2037,12.93,1242,96,89,-9.0,neither,False,False,False,49,,0,0,0,0,0,0
+2038_0_20210608,2038,4.68,450,38,31,3.1,"insulin, no sulfonylurea",False,True,False,46,133.0,0,0,0,0,0,0
+2039_0_20210615,2039,5.58,537,42,36,13.5,"insulin, no sulfonylurea",False,True,False,50,210.0,0,0,0,0,0,0
+2040_0_20210729,2040,9.67,928,75,67,19.7,"insulin, no sulfonylurea",False,True,False,58,146.0,8,1,2,0,1,0
+2041_0_20210813,2041,3.07,296,30,23,18.5,"insulin, no sulfonylurea",False,True,False,71,137.0,0,0,0,0,0,0
+2042_0_20211019,2042,3.16,304,30,24,3.4,"insulin, no sulfonylurea",False,True,False,40,119.0,0,0,0,0,0,0
+2043_0_20210513,2043,7.58,729,53,46,5.0,"insulin, no sulfonylurea",False,True,False,61,120.0,2,0,0,0,1,0
+2044_0_20211101,2044,5.67,545,49,41,30.4,"insulin, no sulfonylurea",False,True,False,71,72.0,0,0,0,0,0,0
+2045_0_20201216,2045,12.94,1243,80,79,8.8,sulfonylurea,True,True,False,69,72.0,3,0,0,0,3,0
+2046_0_20201216,2046,10.94,1051,79,72,-3.9,neither,False,False,False,37,,8,10,0,0,0,0
+2047_0_20210420,2047,11.67,1121,13,11,22.3,neither,False,False,False,41,123.0,3,0,0,0,3,0
+2048_0_20210426,2048,11.85,1139,0,0,7.2,sulfonylurea,True,False,False,83,,6,2,1,0,0,0
+2049_0_20210426,2049,10.79,1037,1,0,7.2,"insulin, no sulfonylurea",False,True,False,37,135.0,0,0,0,0,0,0
+2050_0_20210510,2050,12.3,1182,5,5,6.0,sulfonylurea,True,False,False,68,122.0,0,0,0,0,0,0
+2051_0_20210512,2051,11.68,1122,3,3,15.9,neither,False,False,False,52,111.0,1,0,0,0,0,0
+2052_0_20210511,2052,12.0,1153,0,0,7.2,"insulin, no sulfonylurea",False,True,False,54,141.7,6,2,0,0,2,0
+2053_0_20210518,2053,11.72,1126,3,1,5.2,"insulin, no sulfonylurea",False,True,False,47,82.0,1,0,0,0,1,0
+2054_0_20210524,2054,4.46,429,7,7,4.2,neither,False,False,False,37,119.0,0,0,0,0,0,0
+2055_0_20210524,2055,9.88,949,25,25,4.6,neither,False,False,False,65,132.0,0,0,0,0,0,0
+2055_1_20201207,2055,12.94,1243,53,47,4.2,neither,False,False,False,65,132.0,0,0,0,0,0,0
+2056_0_20210524,2056,4.9,471,12,10,14.9,neither,False,False,False,44,96.0,11,0,0,0,6,0
+2057_0_20210525,2057,11.75,1129,0,0,7.2,"insulin, no sulfonylurea",False,True,False,79,79.0,5,4,1,0,2,2
+2058_0_20210524,2058,12.34,1186,1,0,7.2,neither,False,False,False,48,125.0,1,0,0,0,1,0
+2059_0_20210525,2059,12.08,1161,0,0,7.2,"insulin, no sulfonylurea",False,True,False,84,67.0,1,1,0,0,1,1
+2060_0_20201214,2060,12.88,1237,24,22,36.9,sulfonylurea,True,False,False,92,,7,0,4,0,6,0
+2061_0_20210601,2061,8.72,838,8,5,7.2,neither,False,False,False,69,88.0,3,0,0,0,0,0
+2062_0_20210601,2062,11.54,1109,0,0,7.2,neither,False,False,False,65,118.0,3,0,0,0,1,0
+2063_0_20210608,2063,11.73,1127,11,8,16.0,neither,False,False,False,63,104.0,2,0,0,0,2,0
+2064_0_20210608,2064,11.7,1124,15,13,11.3,neither,False,False,True,67,123.0,2,0,0,0,0,0
+2065_0_20210615,2065,7.81,751,3,2,14.0,sulfonylurea,True,False,False,77,44.0,2,0,0,0,0,0
+2066_0_20210615,2066,11.7,1124,30,25,20.1,sulfonylurea,True,False,False,72,101.0,18,1,4,0,10,1
+2067_0_20210615,2067,11.74,1128,2,1,8.7,neither,False,False,False,68,,2,1,0,0,0,0
+2068_0_20210616,2068,12.16,1168,5,5,11.4,neither,False,False,False,63,74.0,2,0,0,0,0,0
+2069_0_20210621,2069,11.94,1147,0,0,7.2,sulfonylurea,True,False,False,85,178.0,0,0,0,0,0,0
+2069_1_20210705,2069,11.95,1148,1,1,5.4,sulfonylurea,True,False,False,85,178.0,0,0,0,0,0,0
+2069_2_20210825,2069,11.88,1141,0,0,7.2,"insulin, no sulfonylurea",False,True,False,85,178.0,5,2,0,0,1,0
+2070_0_20210629,2070,11.8,1134,0,0,7.2,"insulin, no sulfonylurea",False,True,False,62,172.0,0,0,0,0,0,0
+2071_0_20210705,2071,12.45,1196,20,18,7.2,neither,False,False,True,63,79.0,0,0,0,0,0,0
+2072_0_20210706,2072,11.7,1124,37,34,15.5,neither,False,False,False,59,121.0,5,0,0,0,0,0
+2073_0_20210703,2073,12.94,1243,1,1,6.4,"insulin, no sulfonylurea",False,True,False,97,76.0,0,0,0,0,0,0
+2074_0_20210707,2074,10.92,1049,0,0,7.2,"insulin, no sulfonylurea",False,True,False,31,160.0,1,0,0,0,0,0
+2074_1_20210720,2074,9.18,882,2,2,8.0,"insulin, no sulfonylurea",False,True,False,31,124.0,0,0,0,0,0,0
+2075_0_20210720,2075,8.76,842,10,7,24.2,neither,False,False,True,50,144.0,15,5,4,0,5,3
+2076_0_20210720,2076,11.68,1122,0,0,7.2,"insulin, no sulfonylurea",False,True,False,52,106.0,0,0,0,0,0,0
+2077_0_20210803,2077,9.65,927,33,27,34.8,neither,False,False,False,38,116.0,27,0,33,0,0,0
+2078_0_20210803,2078,12.94,1243,7,6,7.2,neither,False,False,False,58,75.0,0,0,0,0,0,0
+2078_1_20210817,2078,12.88,1237,7,7,8.7,neither,False,False,False,58,75.0,0,0,0,0,0,0
+2079_0_20210809,2079,12.88,1237,0,0,7.2,neither,False,False,False,72,,14,10,6,5,5,2
+2080_0_20210816,2080,12.86,1233,9,6,13.3,sulfonylurea,True,False,False,51,,10,2,1,0,2,1
+2081_0_20210817,2081,11.71,1125,5,4,6.7,neither,False,False,True,57,,1,0,0,0,1,0
+2082_0_20210907,2082,9.9,951,80,74,-3.9,neither,False,False,False,51,34.0,0,0,0,0,0,0
+2083_0_20201214,2083,12.85,1235,95,88,10.4,"insulin, no sulfonylurea",False,True,False,68,,5,2,2,1,5,2
+2084_0_20211013,2084,5.92,567,6,6,12.3,sulfonylurea,True,False,False,61,80.0,12,5,6,3,1,0
+2085_0_20200907,2085,12.94,1243,0,0,7.2,neither,False,False,False,37,,13,4,1,1,9,3
+2086_0_20200914,2086,12.93,1242,0,0,7.2,sulfonylurea,True,False,False,57,,3,3,0,0,2,2
+2087_0_20201012,2087,12.94,1243,3,3,7.2,neither,False,False,False,67,,6,1,0,0,5,0
+2088_0_20201123,2088,12.86,1236,85,82,-4.0,neither,False,False,False,64,,0,0,0,0,0,0
+2089_0_20201019,2089,12.89,1238,12,10,12.6,sulfonylurea,True,False,False,65,,2,1,1,0,0,0
+2090_0_20201130,2090,12.84,1234,69,68,22.9,"insulin, no sulfonylurea",False,True,False,72,,0,0,0,0,0,0
+2091_0_20201029,2091,12.94,1243,2,2,6.6,sulfonylurea,True,False,False,60,,5,0,0,0,3,0
+2092_0_20201109,2092,12.88,1237,77,70,0.9,neither,False,False,False,49,86.0,0,0,0,0,0,0
+2093_0_20201109,2093,12.94,1243,46,46,36.8,neither,False,False,False,65,,12,0,1,0,6,0
+2094_0_20211109,2094,12.93,1242,13,11,-4.1,"insulin, no sulfonylurea",False,True,False,74,101.0,16,17,0,1,2,2
+2095_0_20201116,2095,12.89,1233,45,43,5.7,"insulin, no sulfonylurea",False,True,False,66,,3,2,0,0,3,2
+2096_0_20201116,2096,12.82,1232,2,1,6.9,neither,False,False,False,60,,0,0,0,0,0,0
+2097_0_20201116,2097,12.92,1241,26,24,19.9,sulfonylurea,True,True,False,71,73.0,0,0,0,0,0,0
+2098_0_20201106,2098,12.79,1229,0,0,7.2,neither,False,False,False,64,,0,0,0,0,0,0
+2099_0_20201116,2099,12.83,1233,6,6,7.9,neither,False,False,False,44,,4,2,0,0,0,0

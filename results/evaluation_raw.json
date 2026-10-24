@@ -1,0 +1,1397 @@
+{
+ "reference": "raw",
+ "data": {
+  "periods_scored": 85,
+  "patients_scored": 76,
+  "forecast_origins": 51642,
+  "monitored_patient_days": 537.9,
+  "events_after_calibration": 149,
+  "eligible_events": 149,
+  "patients_with_eligible_events": 41
+ },
+ "forecast": {
+  "30 min": {
+   "persistence": {
+    "name": "No change (persistence)",
+    "rmse_mg_dl": 16.609,
+    "rmse_95ci": [
+     15.6625,
+     17.5391
+    ],
+    "mard_percent": 8.29,
+    "clarke_a_plus_b_percent": 99.62
+   },
+   "trend": {
+    "name": "Recent trend extrapolated",
+    "rmse_mg_dl": 18.7961,
+    "rmse_95ci": [
+     17.7972,
+     19.8928
+    ],
+    "mard_percent": 9.57,
+    "clarke_a_plus_b_percent": 99.83
+   },
+   "physiology": {
+    "name": "Physiology core only",
+    "rmse_mg_dl": 15.816,
+    "rmse_95ci": [
+     14.8429,
+     16.8079
+    ],
+    "mard_percent": 8.26,
+    "clarke_a_plus_b_percent": 99.56
+   },
+   "A": {
+    "name": "ML: dynamic only",
+    "rmse_mg_dl": 13.1543,
+    "rmse_95ci": [
+     12.4614,
+     13.8694
+    ],
+    "mard_percent": 7.17,
+    "clarke_a_plus_b_percent": 99.5
+   },
+   "B": {
+    "name": "ML: dynamic + clinical record",
+    "rmse_mg_dl": 13.6947,
+    "rmse_95ci": [
+     12.9178,
+     14.4822
+    ],
+    "mard_percent": 7.55,
+    "clarke_a_plus_b_percent": 99.37
+   },
+   "D": {
+    "name": "ML: dynamic + physiology",
+    "rmse_mg_dl": 12.8223,
+    "rmse_95ci": [
+     12.1279,
+     13.5505
+    ],
+    "mard_percent": 6.96,
+    "clarke_a_plus_b_percent": 99.5
+   },
+   "C": {
+    "name": "Hybrid: dynamic + clinical record + physiology",
+    "rmse_mg_dl": 13.318,
+    "rmse_95ci": [
+     12.557,
+     14.094
+    ],
+    "mard_percent": 7.34,
+    "clarke_a_plus_b_percent": 99.39
+   },
+   "points": 51465,
+   "patients": 76
+  },
+  "60 min": {
+   "persistence": {
+    "name": "No change (persistence)",
+    "rmse_mg_dl": 27.6141,
+    "rmse_95ci": [
+     25.9636,
+     29.2228
+    ],
+    "mard_percent": 13.92,
+    "clarke_a_plus_b_percent": 98.85
+   },
+   "trend": {
+    "name": "Recent trend extrapolated",
+    "rmse_mg_dl": 37.2793,
+    "rmse_95ci": [
+     35.3052,
+     39.3517
+    ],
+    "mard_percent": 18.79,
+    "clarke_a_plus_b_percent": 97.93
+   },
+   "physiology": {
+    "name": "Physiology core only",
+    "rmse_mg_dl": 25.273,
+    "rmse_95ci": [
+     23.4618,
+     27.2447
+    ],
+    "mard_percent": 13.2,
+    "clarke_a_plus_b_percent": 98.8
+   },
+   "A": {
+    "name": "ML: dynamic only",
+    "rmse_mg_dl": 23.2268,
+    "rmse_95ci": [
+     21.9693,
+     24.4431
+    ],
+    "mard_percent": 12.77,
+    "clarke_a_plus_b_percent": 98.58
+   },
+   "B": {
+    "name": "ML: dynamic + clinical record",
+    "rmse_mg_dl": 24.2764,
+    "rmse_95ci": [
+     22.8168,
+     25.8036
+    ],
+    "mard_percent": 13.54,
+    "clarke_a_plus_b_percent": 98.22
+   },
+   "D": {
+    "name": "ML: dynamic + physiology",
+    "rmse_mg_dl": 22.2724,
+    "rmse_95ci": [
+     21.047,
+     23.514
+    ],
+    "mard_percent": 12.2,
+    "clarke_a_plus_b_percent": 98.64
+   },
+   "C": {
+    "name": "Hybrid: dynamic + clinical record + physiology",
+    "rmse_mg_dl": 23.2911,
+    "rmse_95ci": [
+     21.8884,
+     24.6562
+    ],
+    "mard_percent": 12.93,
+    "clarke_a_plus_b_percent": 98.42
+   },
+   "points": 51294,
+   "patients": 76
+  },
+  "120 min": {
+   "persistence": {
+    "name": "No change (persistence)",
+    "rmse_mg_dl": 40.7073,
+    "rmse_95ci": [
+     37.8941,
+     43.2819
+    ],
+    "mard_percent": 21.77,
+    "clarke_a_plus_b_percent": 97.04
+   },
+   "trend": {
+    "name": "Recent trend extrapolated",
+    "rmse_mg_dl": 68.1936,
+    "rmse_95ci": [
+     64.7297,
+     71.3819
+    ],
+    "mard_percent": 36.34,
+    "clarke_a_plus_b_percent": 90.26
+   },
+   "physiology": {
+    "name": "Physiology core only",
+    "rmse_mg_dl": 36.4384,
+    "rmse_95ci": [
+     33.1438,
+     40.2567
+    ],
+    "mard_percent": 19.12,
+    "clarke_a_plus_b_percent": 97.14
+   },
+   "A": {
+    "name": "ML: dynamic only",
+    "rmse_mg_dl": 33.3868,
+    "rmse_95ci": [
+     30.906,
+     35.8416
+    ],
+    "mard_percent": 18.94,
+    "clarke_a_plus_b_percent": 97.16
+   },
+   "B": {
+    "name": "ML: dynamic + clinical record",
+    "rmse_mg_dl": 35.0118,
+    "rmse_95ci": [
+     32.2636,
+     38.0225
+    ],
+    "mard_percent": 20.22,
+    "clarke_a_plus_b_percent": 96.69
+   },
+   "D": {
+    "name": "ML: dynamic + physiology",
+    "rmse_mg_dl": 31.9597,
+    "rmse_95ci": [
+     29.4744,
+     34.2228
+    ],
+    "mard_percent": 17.93,
+    "clarke_a_plus_b_percent": 97.35
+   },
+   "C": {
+    "name": "Hybrid: dynamic + clinical record + physiology",
+    "rmse_mg_dl": 33.136,
+    "rmse_95ci": [
+     30.6004,
+     35.7435
+    ],
+    "mard_percent": 19.04,
+    "clarke_a_plus_b_percent": 96.95
+   },
+   "points": 50954,
+   "patients": 76
+  }
+ },
+ "paired_differences": {
+  "30 min": {
+   "C minus B (value of the physiology core)": {
+    "rmse_difference_mg_dl": -0.3767,
+    "95ci": [
+     -0.5803,
+     -0.1349
+    ],
+    "share_of_resamples_below_zero": 0.998
+   },
+   "C minus D (value of the clinical record, with physiology)": {
+    "rmse_difference_mg_dl": 0.4957,
+    "95ci": [
+     0.3238,
+     0.7026
+    ],
+    "share_of_resamples_below_zero": 0.0
+   },
+   "B minus A (value of the clinical record, without physiology)": {
+    "rmse_difference_mg_dl": 0.5404,
+    "95ci": [
+     0.3457,
+     0.7393
+    ],
+    "share_of_resamples_below_zero": 0.0
+   },
+   "D minus A (value of the physiology core, without record)": {
+    "rmse_difference_mg_dl": -0.332,
+    "95ci": [
+     -0.4398,
+     -0.2272
+    ],
+    "share_of_resamples_below_zero": 1.0
+   },
+   "B minus persistence": {
+    "rmse_difference_mg_dl": -2.9143,
+    "95ci": [
+     -3.452,
+     -2.3997
+    ],
+    "share_of_resamples_below_zero": 1.0
+   },
+   "C minus persistence": {
+    "rmse_difference_mg_dl": -3.291,
+    "95ci": [
+     -3.7867,
+     -2.7961
+    ],
+    "share_of_resamples_below_zero": 1.0
+   },
+   "trend minus persistence": {
+    "rmse_difference_mg_dl": 2.1871,
+    "95ci": [
+     1.7214,
+     2.6535
+    ],
+    "share_of_resamples_below_zero": 0.0
+   },
+   "physiology minus persistence": {
+    "rmse_difference_mg_dl": -0.793,
+    "95ci": [
+     -1.2065,
+     -0.2131
+    ],
+    "share_of_resamples_below_zero": 0.996
+   }
+  },
+  "60 min": {
+   "C minus B (value of the physiology core)": {
+    "rmse_difference_mg_dl": -0.9853,
+    "95ci": [
+     -1.5942,
+     -0.3244
+    ],
+    "share_of_resamples_below_zero": 0.999
+   },
+   "C minus D (value of the clinical record, with physiology)": {
+    "rmse_difference_mg_dl": 1.0187,
+    "95ci": [
+     0.5295,
+     1.5594
+    ],
+    "share_of_resamples_below_zero": 0.0
+   },
+   "B minus A (value of the clinical record, without physiology)": {
+    "rmse_difference_mg_dl": 1.0496,
+    "95ci": [
+     0.4776,
+     1.6264
+    ],
+    "share_of_resamples_below_zero": 0.0
+   },
+   "D minus A (value of the physiology core, without record)": {
+    "rmse_difference_mg_dl": -0.9544,
+    "95ci": [
+     -1.232,
+     -0.6457
+    ],
+    "share_of_resamples_below_zero": 1.0
+   },
+   "B minus persistence": {
+    "rmse_difference_mg_dl": -3.3377,
+    "95ci": [
+     -4.3963,
+     -2.0951
+    ],
+    "share_of_resamples_below_zero": 1.0
+   },
+   "C minus persistence": {
+    "rmse_difference_mg_dl": -4.323,
+    "95ci": [
+     -5.2229,
+     -3.3022
+    ],
+    "share_of_resamples_below_zero": 1.0
+   },
+   "trend minus persistence": {
+    "rmse_difference_mg_dl": 9.6652,
+    "95ci": [
+     8.6735,
+     10.7205
+    ],
+    "share_of_resamples_below_zero": 0.0
+   },
+   "physiology minus persistence": {
+    "rmse_difference_mg_dl": -2.3411,
+    "95ci": [
+     -3.2295,
+     -1.0357
+    ],
+    "share_of_resamples_below_zero": 0.999
+   }
+  },
+  "120 min": {
+   "C minus B (value of the physiology core)": {
+    "rmse_difference_mg_dl": -1.8758,
+    "95ci": [
+     -2.7785,
+     -0.8814
+    ],
+    "share_of_resamples_below_zero": 1.0
+   },
+   "C minus D (value of the clinical record, with physiology)": {
+    "rmse_difference_mg_dl": 1.1763,
+    "95ci": [
+     0.1135,
+     2.3185
+    ],
+    "share_of_resamples_below_zero": 0.015
+   },
+   "B minus A (value of the clinical record, without physiology)": {
+    "rmse_difference_mg_dl": 1.625,
+    "95ci": [
+     0.323,
+     2.836
+    ],
+    "share_of_resamples_below_zero": 0.004
+   },
+   "D minus A (value of the physiology core, without record)": {
+    "rmse_difference_mg_dl": -1.4271,
+    "95ci": [
+     -2.0938,
+     -0.7046
+    ],
+    "share_of_resamples_below_zero": 1.0
+   },
+   "B minus persistence": {
+    "rmse_difference_mg_dl": -5.6955,
+    "95ci": [
+     -7.6541,
+     -3.5279
+    ],
+    "share_of_resamples_below_zero": 1.0
+   },
+   "C minus persistence": {
+    "rmse_difference_mg_dl": -7.5713,
+    "95ci": [
+     -9.3925,
+     -5.5887
+    ],
+    "share_of_resamples_below_zero": 1.0
+   },
+   "trend minus persistence": {
+    "rmse_difference_mg_dl": 27.4863,
+    "95ci": [
+     25.6891,
+     29.2108
+    ],
+    "share_of_resamples_below_zero": 0.0
+   },
+   "physiology minus persistence": {
+    "rmse_difference_mg_dl": -4.2689,
+    "95ci": [
+     -5.9629,
+     -1.586
+    ],
+    "share_of_resamples_below_zero": 0.999
+   }
+  }
+ },
+ "alarms": {
+  "budget_0.5": {
+   "current": {
+    "name": "Current reading (= persistence forecast)",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 73,
+    "sensitivity_percent": 49.0,
+    "sensitivity_95ci": [
+     41.6,
+     56.0
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 221,
+    "matched": 73,
+    "redundant": 0,
+    "false": 148,
+    "censored": 0,
+    "alert_precision_percent": 33.0,
+    "alert_precision_95ci": [
+     26.2,
+     40.1
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 0.411,
+    "false_alerts_per_day": 0.2751,
+    "false_alerts_per_day_95ci": [
+     0.1844,
+     0.3805
+    ],
+    "lead_min_median": 15.0,
+    "lead_min_iqr": [
+     15.0,
+     15.0
+    ]
+   },
+   "trend": {
+    "name": "Trend forecast, 30 min",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 70,
+    "sensitivity_percent": 47.0,
+    "sensitivity_95ci": [
+     36.1,
+     56.4
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 266,
+    "matched": 70,
+    "redundant": 0,
+    "false": 194,
+    "censored": 2,
+    "alert_precision_percent": 26.5,
+    "alert_precision_95ci": [
+     18.1,
+     35.1
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 0.494,
+    "false_alerts_per_day": 0.3606,
+    "false_alerts_per_day_95ci": [
+     0.2802,
+     0.4417
+    ],
+    "lead_min_median": 15.0,
+    "lead_min_iqr": [
+     15.0,
+     30.0
+    ]
+   },
+   "physiology": {
+    "name": "Physiology core forecast, 30 min",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 79,
+    "sensitivity_percent": 53.0,
+    "sensitivity_95ci": [
+     38.8,
+     66.9
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 272,
+    "matched": 79,
+    "redundant": 0,
+    "false": 192,
+    "censored": 1,
+    "alert_precision_percent": 29.2,
+    "alert_precision_95ci": [
+     19.9,
+     40.6
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 0.506,
+    "false_alerts_per_day": 0.3569,
+    "false_alerts_per_day_95ci": [
+     0.2028,
+     0.5455
+    ],
+    "lead_min_median": 15.0,
+    "lead_min_iqr": [
+     15.0,
+     30.0
+    ]
+   },
+   "ml": {
+    "name": "ML only (dynamic + record), 30 min",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 83,
+    "sensitivity_percent": 55.7,
+    "sensitivity_95ci": [
+     45.5,
+     64.9
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 311,
+    "matched": 83,
+    "redundant": 0,
+    "false": 228,
+    "censored": 0,
+    "alert_precision_percent": 26.7,
+    "alert_precision_95ci": [
+     19.5,
+     36.5
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 0.578,
+    "false_alerts_per_day": 0.4238,
+    "false_alerts_per_day_95ci": [
+     0.2342,
+     0.6676
+    ],
+    "lead_min_median": 15.0,
+    "lead_min_iqr": [
+     15.0,
+     30.0
+    ]
+   },
+   "hybrid": {
+    "name": "Hybrid forecast, 30 min",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 88,
+    "sensitivity_percent": 59.1,
+    "sensitivity_95ci": [
+     48.0,
+     69.8
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 291,
+    "matched": 88,
+    "redundant": 0,
+    "false": 202,
+    "censored": 1,
+    "alert_precision_percent": 30.3,
+    "alert_precision_95ci": [
+     21.6,
+     42.3
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 0.541,
+    "false_alerts_per_day": 0.3755,
+    "false_alerts_per_day_95ci": [
+     0.2098,
+     0.5918
+    ],
+    "lead_min_median": 15.0,
+    "lead_min_iqr": [
+     15.0,
+     30.0
+    ]
+   },
+   "classifier": {
+    "name": "Hybrid classifier, low within 60 min",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 92,
+    "sensitivity_percent": 61.7,
+    "sensitivity_95ci": [
+     51.4,
+     69.7
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 404,
+    "matched": 92,
+    "redundant": 0,
+    "false": 311,
+    "censored": 1,
+    "alert_precision_percent": 22.8,
+    "alert_precision_95ci": [
+     16.3,
+     30.5
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 0.751,
+    "false_alerts_per_day": 0.5781,
+    "false_alerts_per_day_95ci": [
+     0.3898,
+     0.7883
+    ],
+    "lead_min_median": 15.0,
+    "lead_min_iqr": [
+     15.0,
+     30.0
+    ]
+   }
+  },
+  "budget_1.0": {
+   "current": {
+    "name": "Current reading (= persistence forecast)",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 108,
+    "sensitivity_percent": 72.5,
+    "sensitivity_95ci": [
+     62.8,
+     80.4
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 480,
+    "matched": 108,
+    "redundant": 0,
+    "false": 370,
+    "censored": 2,
+    "alert_precision_percent": 22.6,
+    "alert_precision_95ci": [
+     17.2,
+     29.2
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 0.892,
+    "false_alerts_per_day": 0.6878,
+    "false_alerts_per_day_95ci": [
+     0.449,
+     0.9508
+    ],
+    "lead_min_median": 15.0,
+    "lead_min_iqr": [
+     15.0,
+     45.0
+    ]
+   },
+   "trend": {
+    "name": "Trend forecast, 30 min",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 108,
+    "sensitivity_percent": 72.5,
+    "sensitivity_95ci": [
+     61.6,
+     80.3
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 537,
+    "matched": 108,
+    "redundant": 0,
+    "false": 426,
+    "censored": 3,
+    "alert_precision_percent": 20.2,
+    "alert_precision_95ci": [
+     14.6,
+     25.9
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 0.998,
+    "false_alerts_per_day": 0.7919,
+    "false_alerts_per_day_95ci": [
+     0.6254,
+     0.9672
+    ],
+    "lead_min_median": 30.0,
+    "lead_min_iqr": [
+     15.0,
+     45.0
+    ]
+   },
+   "physiology": {
+    "name": "Physiology core forecast, 30 min",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 114,
+    "sensitivity_percent": 76.5,
+    "sensitivity_95ci": [
+     66.7,
+     84.9
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 552,
+    "matched": 114,
+    "redundant": 0,
+    "false": 437,
+    "censored": 1,
+    "alert_precision_percent": 20.7,
+    "alert_precision_95ci": [
+     14.0,
+     29.0
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 1.026,
+    "false_alerts_per_day": 0.8124,
+    "false_alerts_per_day_95ci": [
+     0.5085,
+     1.1705
+    ],
+    "lead_min_median": 15.0,
+    "lead_min_iqr": [
+     15.0,
+     45.0
+    ]
+   },
+   "ml": {
+    "name": "ML only (dynamic + record), 30 min",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 113,
+    "sensitivity_percent": 75.8,
+    "sensitivity_95ci": [
+     65.6,
+     84.5
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 587,
+    "matched": 113,
+    "redundant": 0,
+    "false": 473,
+    "censored": 1,
+    "alert_precision_percent": 19.3,
+    "alert_precision_95ci": [
+     13.9,
+     26.2
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 1.091,
+    "false_alerts_per_day": 0.8793,
+    "false_alerts_per_day_95ci": [
+     0.5669,
+     1.2647
+    ],
+    "lead_min_median": 15.0,
+    "lead_min_iqr": [
+     15.0,
+     30.0
+    ]
+   },
+   "hybrid": {
+    "name": "Hybrid forecast, 30 min",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 117,
+    "sensitivity_percent": 78.5,
+    "sensitivity_95ci": [
+     69.3,
+     85.9
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 563,
+    "matched": 117,
+    "redundant": 0,
+    "false": 444,
+    "censored": 2,
+    "alert_precision_percent": 20.9,
+    "alert_precision_95ci": [
+     14.7,
+     28.7
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 1.047,
+    "false_alerts_per_day": 0.8254,
+    "false_alerts_per_day_95ci": [
+     0.5189,
+     1.1891
+    ],
+    "lead_min_median": 15.0,
+    "lead_min_iqr": [
+     15.0,
+     30.0
+    ]
+   },
+   "classifier": {
+    "name": "Hybrid classifier, low within 60 min",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 120,
+    "sensitivity_percent": 80.5,
+    "sensitivity_95ci": [
+     72.3,
+     87.4
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 783,
+    "matched": 120,
+    "redundant": 0,
+    "false": 660,
+    "censored": 3,
+    "alert_precision_percent": 15.4,
+    "alert_precision_95ci": [
+     11.3,
+     20.2
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 1.456,
+    "false_alerts_per_day": 1.2269,
+    "false_alerts_per_day_95ci": [
+     0.8927,
+     1.5962
+    ],
+    "lead_min_median": 30.0,
+    "lead_min_iqr": [
+     15.0,
+     45.0
+    ]
+   }
+  },
+  "fixed_85": {
+   "current": {
+    "name": "Current reading (= persistence forecast)",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 144,
+    "sensitivity_percent": 96.6,
+    "sensitivity_95ci": [
+     93.3,
+     99.2
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 1309,
+    "matched": 144,
+    "redundant": 0,
+    "false": 1160,
+    "censored": 5,
+    "alert_precision_percent": 11.0,
+    "alert_precision_95ci": [
+     7.8,
+     15.1
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 2.433,
+    "false_alerts_per_day": 2.1564,
+    "false_alerts_per_day_95ci": [
+     1.5518,
+     2.8212
+    ],
+    "lead_min_median": 30.0,
+    "lead_min_iqr": [
+     15.0,
+     45.0
+    ]
+   },
+   "trend": {
+    "name": "Trend forecast, 30 min",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 146,
+    "sensitivity_percent": 98.0,
+    "sensitivity_95ci": [
+     95.6,
+     100.0
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 2209,
+    "matched": 146,
+    "redundant": 0,
+    "false": 2056,
+    "censored": 7,
+    "alert_precision_percent": 6.6,
+    "alert_precision_95ci": [
+     4.7,
+     9.0
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 4.106,
+    "false_alerts_per_day": 3.822,
+    "false_alerts_per_day_95ci": [
+     2.9994,
+     4.6366
+    ],
+    "lead_min_median": 45.0,
+    "lead_min_iqr": [
+     30.0,
+     45.0
+    ]
+   },
+   "physiology": {
+    "name": "Physiology core forecast, 30 min",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 134,
+    "sensitivity_percent": 89.9,
+    "sensitivity_95ci": [
+     83.9,
+     94.7
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 939,
+    "matched": 134,
+    "redundant": 0,
+    "false": 805,
+    "censored": 0,
+    "alert_precision_percent": 14.3,
+    "alert_precision_95ci": [
+     9.8,
+     20.2
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 1.746,
+    "false_alerts_per_day": 1.4965,
+    "false_alerts_per_day_95ci": [
+     1.0157,
+     2.0582
+    ],
+    "lead_min_median": 22.5,
+    "lead_min_iqr": [
+     15.0,
+     45.0
+    ]
+   },
+   "ml": {
+    "name": "ML only (dynamic + record), 30 min",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 132,
+    "sensitivity_percent": 88.6,
+    "sensitivity_95ci": [
+     82.5,
+     93.5
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 873,
+    "matched": 132,
+    "redundant": 0,
+    "false": 739,
+    "censored": 2,
+    "alert_precision_percent": 15.2,
+    "alert_precision_95ci": [
+     10.5,
+     20.6
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 1.623,
+    "false_alerts_per_day": 1.3738,
+    "false_alerts_per_day_95ci": [
+     0.9603,
+     1.8604
+    ],
+    "lead_min_median": 30.0,
+    "lead_min_iqr": [
+     15.0,
+     30.0
+    ]
+   },
+   "hybrid": {
+    "name": "Hybrid forecast, 30 min",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 132,
+    "sensitivity_percent": 88.6,
+    "sensitivity_95ci": [
+     82.9,
+     93.5
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 867,
+    "matched": 132,
+    "redundant": 0,
+    "false": 732,
+    "censored": 3,
+    "alert_precision_percent": 15.3,
+    "alert_precision_95ci": [
+     10.9,
+     20.7
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 1.612,
+    "false_alerts_per_day": 1.3608,
+    "false_alerts_per_day_95ci": [
+     0.9374,
+     1.8533
+    ],
+    "lead_min_median": 30.0,
+    "lead_min_iqr": [
+     15.0,
+     45.0
+    ]
+   }
+  },
+  "fixed_90": {
+   "current": {
+    "name": "Current reading (= persistence forecast)",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 147,
+    "sensitivity_percent": 98.7,
+    "sensitivity_95ci": [
+     96.2,
+     100.0
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 1927,
+    "matched": 147,
+    "redundant": 0,
+    "false": 1774,
+    "censored": 6,
+    "alert_precision_percent": 7.7,
+    "alert_precision_95ci": [
+     5.4,
+     10.6
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 3.582,
+    "false_alerts_per_day": 3.2978,
+    "false_alerts_per_day_95ci": [
+     2.464,
+     4.1598
+    ],
+    "lead_min_median": 30.0,
+    "lead_min_iqr": [
+     15.0,
+     45.0
+    ]
+   },
+   "trend": {
+    "name": "Trend forecast, 30 min",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 147,
+    "sensitivity_percent": 98.7,
+    "sensitivity_95ci": [
+     96.5,
+     100.0
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 2819,
+    "matched": 147,
+    "redundant": 0,
+    "false": 2662,
+    "censored": 10,
+    "alert_precision_percent": 5.2,
+    "alert_precision_95ci": [
+     3.7,
+     7.2
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 5.24,
+    "false_alerts_per_day": 4.9485,
+    "false_alerts_per_day_95ci": [
+     3.959,
+     5.9273
+    ],
+    "lead_min_median": 45.0,
+    "lead_min_iqr": [
+     30.0,
+     45.0
+    ]
+   },
+   "physiology": {
+    "name": "Physiology core forecast, 30 min",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 145,
+    "sensitivity_percent": 97.3,
+    "sensitivity_95ci": [
+     94.8,
+     99.3
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 1524,
+    "matched": 145,
+    "redundant": 0,
+    "false": 1373,
+    "censored": 6,
+    "alert_precision_percent": 9.6,
+    "alert_precision_95ci": [
+     6.6,
+     13.4
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 2.833,
+    "false_alerts_per_day": 2.5523,
+    "false_alerts_per_day_95ci": [
+     1.828,
+     3.3435
+    ],
+    "lead_min_median": 30.0,
+    "lead_min_iqr": [
+     15.0,
+     30.0
+    ]
+   },
+   "ml": {
+    "name": "ML only (dynamic + record), 30 min",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 145,
+    "sensitivity_percent": 97.3,
+    "sensitivity_95ci": [
+     94.8,
+     99.4
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 1414,
+    "matched": 145,
+    "redundant": 0,
+    "false": 1263,
+    "censored": 6,
+    "alert_precision_percent": 10.3,
+    "alert_precision_95ci": [
+     7.2,
+     14.0
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 2.629,
+    "false_alerts_per_day": 2.3479,
+    "false_alerts_per_day_95ci": [
+     1.7284,
+     3.0108
+    ],
+    "lead_min_median": 30.0,
+    "lead_min_iqr": [
+     15.0,
+     45.0
+    ]
+   },
+   "hybrid": {
+    "name": "Hybrid forecast, 30 min",
+    "eligible_events": 149,
+    "patients_with_eligible_events": 41,
+    "caught": 147,
+    "sensitivity_percent": 98.7,
+    "sensitivity_95ci": [
+     96.7,
+     100.0
+    ],
+    "bootstrap_resamples_with_no_event": 0,
+    "emitted_alerts": 1467,
+    "matched": 147,
+    "redundant": 0,
+    "false": 1315,
+    "censored": 5,
+    "alert_precision_percent": 10.1,
+    "alert_precision_95ci": [
+     7.1,
+     13.9
+    ],
+    "monitored_patient_days": 537.9,
+    "emitted_alerts_per_day": 2.727,
+    "false_alerts_per_day": 2.4445,
+    "false_alerts_per_day_95ci": [
+     1.7738,
+     3.1605
+    ],
+    "lead_min_median": 30.0,
+    "lead_min_iqr": [
+     15.0,
+     45.0
+    ]
+   }
+  }
+ },
+ "classifier": {
+  "windows": 50481,
+  "windows_with_low_within_60_min": 556,
+  "prevalence": 0.011,
+  "auroc": 0.908,
+  "auroc_95ci": [
+   0.8846,
+   0.9294
+  ],
+  "auprc": 0.156,
+  "auprc_95ci": [
+   0.1083,
+   0.2085
+  ]
+ },
+ "thresholds_by_fold": {
+  "0": {
+   "current": {
+    "budget_0.5": 73.5,
+    "budget_1.0": 77.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "trend": {
+    "budget_0.5": 59.5,
+    "budget_1.0": 67.5,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "physiology": {
+    "budget_0.5": 76.0,
+    "budget_1.0": 79.5,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "ml": {
+    "budget_0.5": 77.0,
+    "budget_1.0": 81.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "hybrid": {
+    "budget_0.5": 77.5,
+    "budget_1.0": 81.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "classifier": {
+    "budget_0.5": 0.027860014999194504,
+    "budget_1.0": 0.005231914743430647
+   }
+  },
+  "1": {
+   "current": {
+    "budget_0.5": 73.5,
+    "budget_1.0": 77.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "trend": {
+    "budget_0.5": 59.5,
+    "budget_1.0": 68.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "physiology": {
+    "budget_0.5": 76.0,
+    "budget_1.0": 81.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "ml": {
+    "budget_0.5": 78.5,
+    "budget_1.0": 83.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "hybrid": {
+    "budget_0.5": 77.5,
+    "budget_1.0": 81.5,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "classifier": {
+    "budget_0.5": 0.009562080210925309,
+    "budget_1.0": 0.001979606618827134
+   }
+  },
+  "2": {
+   "current": {
+    "budget_0.5": 73.5,
+    "budget_1.0": 75.5,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "trend": {
+    "budget_0.5": 58.0,
+    "budget_1.0": 66.5,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "physiology": {
+    "budget_0.5": 75.5,
+    "budget_1.0": 79.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "ml": {
+    "budget_0.5": 77.0,
+    "budget_1.0": 80.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "hybrid": {
+    "budget_0.5": 77.0,
+    "budget_1.0": 79.5,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "classifier": {
+    "budget_0.5": 0.03296271247916237,
+    "budget_1.0": 0.006445879315653675
+   }
+  },
+  "3": {
+   "current": {
+    "budget_0.5": 73.5,
+    "budget_1.0": 75.5,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "trend": {
+    "budget_0.5": 58.0,
+    "budget_1.0": 66.5,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "physiology": {
+    "budget_0.5": 75.5,
+    "budget_1.0": 79.5,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "ml": {
+    "budget_0.5": 75.5,
+    "budget_1.0": 79.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "hybrid": {
+    "budget_0.5": 76.0,
+    "budget_1.0": 79.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "classifier": {
+    "budget_0.5": 0.05653632077435827,
+    "budget_1.0": 0.010654124663359701
+   }
+  },
+  "4": {
+   "current": {
+    "budget_0.5": 73.5,
+    "budget_1.0": 77.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "trend": {
+    "budget_0.5": 59.5,
+    "budget_1.0": 68.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "physiology": {
+    "budget_0.5": 77.0,
+    "budget_1.0": 81.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "ml": {
+    "budget_0.5": 78.5,
+    "budget_1.0": 82.5,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "hybrid": {
+    "budget_0.5": 78.0,
+    "budget_1.0": 82.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "classifier": {
+    "budget_0.5": 0.009670397702896528,
+    "budget_1.0": 0.0023670540450012804
+   }
+  }
+ },
+ "elapsed_s": 227.6,
+ "protocol": {
+  "version": "2.0 (frozen 2026-10-23)",
+  "document": "docs/evaluation_protocol.md",
+  "sha256": "7914473e2b9171a2f7e1a690626ffe59cd6964d666d3455dcab13c1bf52895df"
+ }
+}

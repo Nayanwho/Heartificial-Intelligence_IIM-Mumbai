@@ -1,0 +1,14 @@
+# Exact versions used for the version-2 results (Python 3.13.16, Linux).
+# Install with: pip install -r requirements-lock.txt
+# Playwright (optional) is only needed to re-render the PDFs and screenshots.
+numpy==2.5.3
+pandas==3.0.5
+scipy==1.18.1
+scikit-learn==1.9.1
+lightgbm==4.7.0
+openpyxl==3.1.5
+xlrd==2.0.2
+matplotlib==3.11.2
+plotly==7.1.0
+streamlit==1.65.0
+pytest==9.1.1

@@ -1,0 +1,1258 @@
+[
+ {
+  "id": "SYN-001",
+  "persona": "Meena",
+  "age": 62,
+  "sex": "female",
+  "city": "Bengaluru",
+  "height_m": 1.55,
+  "weight_kg_12w_ago": 74.0,
+  "weight_kg_now": 70.3,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 8.4,
+  "hba1c_now": 7.1,
+  "egfr_prev": 72,
+  "egfr_now": 58,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "*1/*1",
+  "g6pd": "normal",
+  "medicines": [
+   [
+    "glimepiride",
+    2.0,
+    "twice daily, before breakfast and dinner, as a glimepiride 2 mg + metformin 500 mg fixed-dose combination tablet. Twice-daily glimepiride-metformin combinations are common in Indian practice (real-world study of 7,058 patients at 347 Indian sites, PMC7920844); the US glimepiride label specifies once daily.",
+    "2023-03-01"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily, in the same combination tablet",
+    "2023-03-01"
+   ],
+   [
+    "semaglutide",
+    0.5,
+    "once weekly, Sunday",
+    "2026-09-06"
+   ]
+  ],
+  "fasting_plan": {
+   "label": "One-day fast (one evening meal)",
+   "dates": [
+    "2026-10-22"
+   ],
+   "window": [
+    6,
+    18
+   ]
+  },
+  "seed_period": "2045_0_20201216"
+ },
+ {
+  "id": "SYN-002",
+  "persona": null,
+  "age": 47,
+  "sex": "male",
+  "city": "Pune",
+  "height_m": 1.75,
+  "weight_kg_12w_ago": 83.5,
+  "weight_kg_now": 84.2,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 8.9,
+  "hba1c_now": 8.5,
+  "egfr_prev": 83,
+  "egfr_now": 64,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "*1/*1",
+  "g6pd": "not tested",
+  "medicines": [
+   [
+    "glimepiride",
+    4.0,
+    "once daily, before breakfast",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ]
+  ],
+  "fasting_plan": {
+   "label": "Month-long daytime fast",
+   "window": [
+    5,
+    19
+   ],
+   "dates": [
+    "2027-01-20",
+    "2027-01-21",
+    "2027-01-22",
+    "2027-01-23",
+    "2027-01-24",
+    "2027-01-25",
+    "2027-01-26",
+    "2027-01-27",
+    "2027-01-28",
+    "2027-01-29",
+    "2027-01-30",
+    "2027-01-31",
+    "2027-02-01",
+    "2027-02-02",
+    "2027-02-03",
+    "2027-02-04",
+    "2027-02-05",
+    "2027-02-06",
+    "2027-02-07",
+    "2027-02-08",
+    "2027-02-09",
+    "2027-02-10",
+    "2027-02-11",
+    "2027-02-12",
+    "2027-02-13",
+    "2027-02-14",
+    "2027-02-15",
+    "2027-02-16",
+    "2027-02-17",
+    "2027-02-18"
+   ]
+  },
+  "seed_period": "2045_0_20201216"
+ },
+ {
+  "id": "SYN-003",
+  "persona": null,
+  "age": 51,
+  "sex": "female",
+  "city": "Chennai",
+  "height_m": 1.52,
+  "weight_kg_12w_ago": 78.7,
+  "weight_kg_now": 79.2,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 10.2,
+  "hba1c_now": 8.6,
+  "egfr_prev": 85,
+  "egfr_now": 79,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "*1/*3",
+  "g6pd": "normal",
+  "medicines": [
+   [
+    "glimepiride",
+    2.0,
+    "twice daily, before breakfast and dinner",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ]
+  ],
+  "fasting_plan": {
+   "label": "Month-long daytime fast",
+   "window": [
+    5,
+    19
+   ],
+   "dates": [
+    "2026-12-31",
+    "2027-01-01",
+    "2027-01-02",
+    "2027-01-03",
+    "2027-01-04",
+    "2027-01-05",
+    "2027-01-06",
+    "2027-01-07",
+    "2027-01-08",
+    "2027-01-09",
+    "2027-01-10",
+    "2027-01-11",
+    "2027-01-12",
+    "2027-01-13",
+    "2027-01-14",
+    "2027-01-15",
+    "2027-01-16",
+    "2027-01-17",
+    "2027-01-18",
+    "2027-01-19",
+    "2027-01-20",
+    "2027-01-21",
+    "2027-01-22",
+    "2027-01-23",
+    "2027-01-24",
+    "2027-01-25",
+    "2027-01-26",
+    "2027-01-27",
+    "2027-01-28",
+    "2027-01-29"
+   ]
+  },
+  "seed_period": "2069_0_20210621"
+ },
+ {
+  "id": "SYN-004",
+  "persona": null,
+  "age": 56,
+  "sex": "female",
+  "city": "Pune",
+  "height_m": 1.6,
+  "weight_kg_12w_ago": 86.8,
+  "weight_kg_now": 85.9,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 10.0,
+  "hba1c_now": 8.0,
+  "egfr_prev": 84,
+  "egfr_now": 81,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "*1/*1",
+  "g6pd": "normal",
+  "medicines": [
+   [
+    "glimepiride",
+    4.0,
+    "once daily, before breakfast",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ],
+   [
+    "insulin glargine",
+    10.0,
+    "at bedtime",
+    "2024-02-01"
+   ]
+  ],
+  "fasting_plan": {
+   "label": "One-day fast",
+   "window": [
+    6,
+    18
+   ],
+   "dates": [
+    "2026-10-30"
+   ]
+  },
+  "seed_period": "2001_1_20201117"
+ },
+ {
+  "id": "SYN-005",
+  "persona": null,
+  "age": 73,
+  "sex": "male",
+  "city": "Bengaluru",
+  "height_m": 1.67,
+  "weight_kg_12w_ago": 84.6,
+  "weight_kg_now": 78.0,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 9.6,
+  "hba1c_now": 8.0,
+  "egfr_prev": 83,
+  "egfr_now": 78,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "*1/*1",
+  "g6pd": "deficient",
+  "medicines": [
+   [
+    "glimepiride",
+    2.0,
+    "once daily, before breakfast",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ],
+   [
+    "semaglutide",
+    0.5,
+    "once weekly",
+    "2026-09-09"
+   ]
+  ],
+  "fasting_plan": null,
+  "seed_period": "2080_0_20210816"
+ },
+ {
+  "id": "SYN-006",
+  "persona": null,
+  "age": 48,
+  "sex": "female",
+  "city": "Chennai",
+  "height_m": 1.74,
+  "weight_kg_12w_ago": 67.3,
+  "weight_kg_now": 61.9,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 10.0,
+  "hba1c_now": 8.8,
+  "egfr_prev": 55,
+  "egfr_now": 47,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "not tested",
+  "g6pd": "normal",
+  "medicines": [
+   [
+    "glimepiride",
+    2.0,
+    "once daily, before breakfast",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ],
+   [
+    "semaglutide",
+    0.5,
+    "once weekly",
+    "2026-09-08"
+   ]
+  ],
+  "fasting_plan": null,
+  "seed_period": "2066_0_20210615"
+ },
+ {
+  "id": "SYN-007",
+  "persona": null,
+  "age": 67,
+  "sex": "male",
+  "city": "Delhi",
+  "height_m": 1.61,
+  "weight_kg_12w_ago": 89.0,
+  "weight_kg_now": 87.8,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 7.3,
+  "hba1c_now": 7.6,
+  "egfr_prev": 68,
+  "egfr_now": 56,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "not tested",
+  "g6pd": "not tested",
+  "medicines": [
+   [
+    "glimepiride",
+    2.0,
+    "once daily, before breakfast",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ],
+   [
+    "insulin glargine",
+    14.0,
+    "at bedtime",
+    "2024-02-01"
+   ]
+  ],
+  "fasting_plan": null,
+  "seed_period": "2001_1_20201117"
+ },
+ {
+  "id": "SYN-008",
+  "persona": null,
+  "age": 45,
+  "sex": "female",
+  "city": "Chennai",
+  "height_m": 1.83,
+  "weight_kg_12w_ago": 69.9,
+  "weight_kg_now": 70.1,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 8.0,
+  "hba1c_now": 6.7,
+  "egfr_prev": 95,
+  "egfr_now": 94,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "not tested",
+  "g6pd": "normal",
+  "medicines": [
+   [
+    "glimepiride",
+    4.0,
+    "once daily, before breakfast",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ]
+  ],
+  "fasting_plan": {
+   "label": "Month-long daytime fast",
+   "window": [
+    5,
+    19
+   ],
+   "dates": [
+    "2026-12-22",
+    "2026-12-23",
+    "2026-12-24",
+    "2026-12-25",
+    "2026-12-26",
+    "2026-12-27",
+    "2026-12-28",
+    "2026-12-29",
+    "2026-12-30",
+    "2026-12-31",
+    "2027-01-01",
+    "2027-01-02",
+    "2027-01-03",
+    "2027-01-04",
+    "2027-01-05",
+    "2027-01-06",
+    "2027-01-07",
+    "2027-01-08",
+    "2027-01-09",
+    "2027-01-10",
+    "2027-01-11",
+    "2027-01-12",
+    "2027-01-13",
+    "2027-01-14",
+    "2027-01-15",
+    "2027-01-16",
+    "2027-01-17",
+    "2027-01-18",
+    "2027-01-19",
+    "2027-01-20"
+   ]
+  },
+  "seed_period": "2086_0_20200914"
+ },
+ {
+  "id": "SYN-009",
+  "persona": null,
+  "age": 77,
+  "sex": "female",
+  "city": "Bengaluru",
+  "height_m": 1.45,
+  "weight_kg_12w_ago": 69.3,
+  "weight_kg_now": 69.3,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 7.5,
+  "hba1c_now": 8.2,
+  "egfr_prev": 91,
+  "egfr_now": 73,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "*1/*1",
+  "g6pd": "normal",
+  "medicines": [
+   [
+    "glimepiride",
+    4.0,
+    "once daily, before breakfast",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ]
+  ],
+  "fasting_plan": null,
+  "seed_period": "2089_0_20201019"
+ },
+ {
+  "id": "SYN-010",
+  "persona": null,
+  "age": 45,
+  "sex": "female",
+  "city": "Mumbai",
+  "height_m": 1.5,
+  "weight_kg_12w_ago": 72.0,
+  "weight_kg_now": 72.4,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 7.7,
+  "hba1c_now": 8.4,
+  "egfr_prev": 78,
+  "egfr_now": 70,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "*1/*1",
+  "g6pd": "not tested",
+  "medicines": [
+   [
+    "glimepiride",
+    4.0,
+    "once daily, before breakfast",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ]
+  ],
+  "fasting_plan": null,
+  "seed_period": "2089_0_20201019"
+ },
+ {
+  "id": "SYN-011",
+  "persona": null,
+  "age": 45,
+  "sex": "female",
+  "city": "Bengaluru",
+  "height_m": 1.53,
+  "weight_kg_12w_ago": 79.7,
+  "weight_kg_now": 73.6,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 9.0,
+  "hba1c_now": 6.9,
+  "egfr_prev": 77,
+  "egfr_now": 62,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "not tested",
+  "g6pd": "not tested",
+  "medicines": [
+   [
+    "glimepiride",
+    4.0,
+    "once daily, before breakfast",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ],
+   [
+    "semaglutide",
+    0.5,
+    "once weekly",
+    "2026-08-08"
+   ]
+  ],
+  "fasting_plan": null,
+  "seed_period": "2045_0_20201216"
+ },
+ {
+  "id": "SYN-012",
+  "persona": null,
+  "age": 68,
+  "sex": "female",
+  "city": "Pune",
+  "height_m": 1.5,
+  "weight_kg_12w_ago": 82.2,
+  "weight_kg_now": 82.9,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 10.1,
+  "hba1c_now": 9.3,
+  "egfr_prev": 44,
+  "egfr_now": 35,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "not tested",
+  "g6pd": "normal",
+  "medicines": [
+   [
+    "glimepiride",
+    2.0,
+    "twice daily, before breakfast and dinner",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ]
+  ],
+  "fasting_plan": {
+   "label": "Nine-day fast (daytime)",
+   "window": [
+    6,
+    18
+   ],
+   "dates": [
+    "2026-10-25",
+    "2026-10-26",
+    "2026-10-27",
+    "2026-10-28",
+    "2026-10-29",
+    "2026-10-30",
+    "2026-10-31",
+    "2026-11-01",
+    "2026-11-02"
+   ]
+  },
+  "seed_period": "2048_0_20210426"
+ },
+ {
+  "id": "SYN-013",
+  "persona": null,
+  "age": 63,
+  "sex": "female",
+  "city": "Chennai",
+  "height_m": 1.67,
+  "weight_kg_12w_ago": 92.3,
+  "weight_kg_now": 87.4,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 10.3,
+  "hba1c_now": 8.0,
+  "egfr_prev": 90,
+  "egfr_now": 79,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "not tested",
+  "g6pd": "normal",
+  "medicines": [
+   [
+    "glimepiride",
+    2.0,
+    "twice daily, before breakfast and dinner",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ],
+   [
+    "semaglutide",
+    0.5,
+    "once weekly",
+    "2026-08-20"
+   ]
+  ],
+  "fasting_plan": null,
+  "seed_period": "2048_0_20210426"
+ },
+ {
+  "id": "SYN-014",
+  "persona": null,
+  "age": 66,
+  "sex": "male",
+  "city": "Chennai",
+  "height_m": 1.54,
+  "weight_kg_12w_ago": 83.1,
+  "weight_kg_now": 78.4,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 9.8,
+  "hba1c_now": 8.0,
+  "egfr_prev": 88,
+  "egfr_now": 70,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "not tested",
+  "g6pd": "not tested",
+  "medicines": [
+   [
+    "glimepiride",
+    2.0,
+    "twice daily, before breakfast and dinner",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ],
+   [
+    "semaglutide",
+    0.5,
+    "once weekly",
+    "2026-10-04"
+   ]
+  ],
+  "fasting_plan": null,
+  "seed_period": "2048_0_20210426"
+ },
+ {
+  "id": "SYN-015",
+  "persona": null,
+  "age": 54,
+  "sex": "male",
+  "city": "Chennai",
+  "height_m": 1.49,
+  "weight_kg_12w_ago": 74.8,
+  "weight_kg_now": 75.4,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 9.4,
+  "hba1c_now": 7.1,
+  "egfr_prev": 83,
+  "egfr_now": 75,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "*1/*3",
+  "g6pd": "normal",
+  "medicines": [
+   [
+    "glimepiride",
+    1.0,
+    "once daily, before breakfast",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ]
+  ],
+  "fasting_plan": null,
+  "seed_period": "2080_0_20210816"
+ },
+ {
+  "id": "SYN-016",
+  "persona": null,
+  "age": 66,
+  "sex": "female",
+  "city": "Mumbai",
+  "height_m": 1.57,
+  "weight_kg_12w_ago": 60.0,
+  "weight_kg_now": 59.2,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 9.1,
+  "hba1c_now": 9.2,
+  "egfr_prev": 68,
+  "egfr_now": 64,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "*1/*1",
+  "g6pd": "normal",
+  "medicines": [
+   [
+    "glimepiride",
+    1.0,
+    "twice daily, before breakfast and dinner",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ],
+   [
+    "insulin glargine",
+    17.0,
+    "at bedtime",
+    "2024-02-01"
+   ]
+  ],
+  "fasting_plan": null,
+  "seed_period": "2097_0_20201116"
+ },
+ {
+  "id": "SYN-017",
+  "persona": null,
+  "age": 67,
+  "sex": "male",
+  "city": "Mumbai",
+  "height_m": 1.61,
+  "weight_kg_12w_ago": 75.6,
+  "weight_kg_now": 71.6,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 8.7,
+  "hba1c_now": 7.2,
+  "egfr_prev": 74,
+  "egfr_now": 72,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "not tested",
+  "g6pd": "not tested",
+  "medicines": [
+   [
+    "glimepiride",
+    2.0,
+    "twice daily, before breakfast and dinner",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ],
+   [
+    "semaglutide",
+    0.5,
+    "once weekly",
+    "2026-10-03"
+   ]
+  ],
+  "fasting_plan": {
+   "label": "One-day fast",
+   "window": [
+    6,
+    18
+   ],
+   "dates": [
+    "2026-10-25"
+   ]
+  },
+  "seed_period": "2048_0_20210426"
+ },
+ {
+  "id": "SYN-018",
+  "persona": null,
+  "age": 49,
+  "sex": "male",
+  "city": "Pune",
+  "height_m": 1.72,
+  "weight_kg_12w_ago": 82.5,
+  "weight_kg_now": 81.3,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 8.9,
+  "hba1c_now": 8.8,
+  "egfr_prev": 86,
+  "egfr_now": 73,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "*1/*3",
+  "g6pd": "normal",
+  "medicines": [
+   [
+    "glimepiride",
+    1.0,
+    "once daily, before breakfast",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ]
+  ],
+  "fasting_plan": null,
+  "seed_period": "2066_0_20210615"
+ },
+ {
+  "id": "SYN-019",
+  "persona": null,
+  "age": 54,
+  "sex": "female",
+  "city": "Bengaluru",
+  "height_m": 1.66,
+  "weight_kg_12w_ago": 99.3,
+  "weight_kg_now": 92.5,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 7.6,
+  "hba1c_now": 9.4,
+  "egfr_prev": 92,
+  "egfr_now": 80,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "*1/*1",
+  "g6pd": "normal",
+  "medicines": [
+   [
+    "glimepiride",
+    2.0,
+    "twice daily, before breakfast and dinner",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ],
+   [
+    "semaglutide",
+    0.5,
+    "once weekly",
+    "2026-09-17"
+   ]
+  ],
+  "fasting_plan": {
+   "label": "Nine-day fast (daytime)",
+   "window": [
+    6,
+    18
+   ],
+   "dates": [
+    "2026-10-22",
+    "2026-10-23",
+    "2026-10-24",
+    "2026-10-25",
+    "2026-10-26",
+    "2026-10-27",
+    "2026-10-28",
+    "2026-10-29",
+    "2026-10-30"
+   ]
+  },
+  "seed_period": "2091_0_20201029"
+ },
+ {
+  "id": "SYN-020",
+  "persona": null,
+  "age": 53,
+  "sex": "female",
+  "city": "Mumbai",
+  "height_m": 1.61,
+  "weight_kg_12w_ago": 75.5,
+  "weight_kg_now": 72.3,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 8.2,
+  "hba1c_now": 7.7,
+  "egfr_prev": 80,
+  "egfr_now": 67,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "not tested",
+  "g6pd": "normal",
+  "medicines": [
+   [
+    "glimepiride",
+    4.0,
+    "once daily, before breakfast",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ],
+   [
+    "semaglutide",
+    0.5,
+    "once weekly",
+    "2026-10-05"
+   ]
+  ],
+  "fasting_plan": null,
+  "seed_period": "2086_0_20200914"
+ },
+ {
+  "id": "SYN-021",
+  "persona": null,
+  "age": 70,
+  "sex": "male",
+  "city": "Chennai",
+  "height_m": 1.63,
+  "weight_kg_12w_ago": 66.2,
+  "weight_kg_now": 66.5,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 10.1,
+  "hba1c_now": 8.6,
+  "egfr_prev": 115,
+  "egfr_now": 101,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "not tested",
+  "g6pd": "not tested",
+  "medicines": [
+   [
+    "glimepiride",
+    2.0,
+    "once daily, before breakfast",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ]
+  ],
+  "fasting_plan": {
+   "label": "Nine-day fast (daytime)",
+   "window": [
+    6,
+    18
+   ],
+   "dates": [
+    "2026-10-22",
+    "2026-10-23",
+    "2026-10-24",
+    "2026-10-25",
+    "2026-10-26",
+    "2026-10-27",
+    "2026-10-28",
+    "2026-10-29",
+    "2026-10-30"
+   ]
+  },
+  "seed_period": "2050_0_20210510"
+ },
+ {
+  "id": "SYN-022",
+  "persona": null,
+  "age": 67,
+  "sex": "female",
+  "city": "Mumbai",
+  "height_m": 1.65,
+  "weight_kg_12w_ago": 71.1,
+  "weight_kg_now": 71.1,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 8.5,
+  "hba1c_now": 8.9,
+  "egfr_prev": 34,
+  "egfr_now": 27,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "not tested",
+  "g6pd": "not tested",
+  "medicines": [
+   [
+    "glimepiride",
+    2.0,
+    "twice daily, before breakfast and dinner",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ]
+  ],
+  "fasting_plan": {
+   "label": "Nine-day fast (daytime)",
+   "window": [
+    6,
+    18
+   ],
+   "dates": [
+    "2026-10-25",
+    "2026-10-26",
+    "2026-10-27",
+    "2026-10-28",
+    "2026-10-29",
+    "2026-10-30",
+    "2026-10-31",
+    "2026-11-01",
+    "2026-11-02"
+   ]
+  },
+  "seed_period": "2069_1_20210705"
+ },
+ {
+  "id": "SYN-023",
+  "persona": null,
+  "age": 52,
+  "sex": "female",
+  "city": "Mumbai",
+  "height_m": 1.7,
+  "weight_kg_12w_ago": 70.9,
+  "weight_kg_now": 69.9,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 10.4,
+  "hba1c_now": 7.1,
+  "egfr_prev": 85,
+  "egfr_now": 69,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "not tested",
+  "g6pd": "not tested",
+  "medicines": [
+   [
+    "glimepiride",
+    4.0,
+    "once daily, before breakfast",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ]
+  ],
+  "fasting_plan": null,
+  "seed_period": "2045_0_20201216"
+ },
+ {
+  "id": "SYN-024",
+  "persona": null,
+  "age": 48,
+  "sex": "female",
+  "city": "Pune",
+  "height_m": 1.63,
+  "weight_kg_12w_ago": 74.1,
+  "weight_kg_now": 69.2,
+  "weight_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "hba1c_prev": 8.0,
+  "hba1c_now": 9.4,
+  "egfr_prev": 81,
+  "egfr_now": 72,
+  "egfr_dates": [
+   "2026-07-28",
+   "2026-10-17"
+  ],
+  "cyp2c9": "*1/*1",
+  "g6pd": "not tested",
+  "medicines": [
+   [
+    "glimepiride",
+    4.0,
+    "once daily, before breakfast",
+    "2022-01-10"
+   ],
+   [
+    "metformin",
+    500.0,
+    "twice daily",
+    "2020-05-01"
+   ],
+   [
+    "semaglutide",
+    0.5,
+    "once weekly",
+    "2026-08-07"
+   ]
+  ],
+  "fasting_plan": {
+   "label": "One-day fast",
+   "window": [
+    6,
+    18
+   ],
+   "dates": [
+    "2026-10-24"
+   ]
+  },
+  "seed_period": "2089_0_20201019"
+ }
+]

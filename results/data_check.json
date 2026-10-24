@@ -1,0 +1,68 @@
+{
+  "periods": 109,
+  "patients": 100,
+  "sensor_readings_after_warmup": 101826,
+  "sensor_readings_all": 112287,
+  "fingersticks": 3262,
+  "fingersticks_per_day_median_where_taken": 3.8,
+  "periods_with_fingersticks": 94,
+  "patients_on_sulfonylurea": 18,
+  "patients_on_insulin": 59,
+  "patients_on_glp1": 6,
+  "patients_aged_65_plus": 41,
+  "sensor_check": {
+    "pairs_within_8_min": 2883,
+    "mean_sensor_minus_fingerstick_mg_dl": -12.0,
+    "mard_percent": 12.8,
+    "cohort_prior_offset_mg_dl": 7.2,
+    "person_offset_median_mg_dl": 7.2,
+    "sensor_lows_with_a_fingerstick": 53,
+    "of_which_fingerstick_also_below_70": 7,
+    "by_fingerstick_band": {
+      "fingerstick 0 to 70": {
+        "pairs": 17,
+        "mean_sensor_minus_fingerstick": 10.8
+      },
+      "fingerstick 70 to 180": {
+        "pairs": 2016,
+        "mean_sensor_minus_fingerstick": -5.9
+      },
+      "fingerstick 180 to 1000": {
+        "pairs": 849,
+        "mean_sensor_minus_fingerstick": -24.8
+      }
+    }
+  },
+  "lows": {
+    "raw_15min_lows": 294,
+    "corrected_15min_lows": 99,
+    "raw_severe_lows_below_54": 73,
+    "corrected_severe_lows_below_54": 13,
+    "corrected_night_lows": 29,
+    "patients_with_corrected_low": 25,
+    "by_drug_group": {
+      "insulin, no sulfonylurea": {
+        "patients": 51,
+        "patient_days": 455.4,
+        "raw_lows_per_100_days": 18.2,
+        "corrected_lows_per_100_days": 9.9,
+        "patients_with_corrected_low": 10
+      },
+      "neither": {
+        "patients": 31,
+        "patient_days": 378.1,
+        "raw_lows_per_100_days": 35.7,
+        "corrected_lows_per_100_days": 8.7,
+        "patients_with_corrected_low": 7
+      },
+      "sulfonylurea": {
+        "patients": 18,
+        "patient_days": 226.3,
+        "raw_lows_per_100_days": 33.6,
+        "corrected_lows_per_100_days": 9.3,
+        "patients_with_corrected_low": 8
+      }
+    }
+  },
+  "cgm_off_test_periods_7_days_plus_with_fingersticks": 71
+}

@@ -1,0 +1,114 @@
+{
+ "live_replay": {
+  "file": "docs/demo_1_live_replay.mp4",
+  "duration_s": 166.8,
+  "cues": [
+   {
+    "t": 0.0,
+    "caption": "Live replay: a real ShanghaiT2DM patient, scored by a model trained without them",
+    "t_video": 2.4
+   },
+   {
+    "t": 8.7,
+    "caption": "The clock starts 75 minutes before this period's first low; only records up to the clock are used",
+    "t_video": 11.6
+   },
+   {
+    "t": 15.7,
+    "caption": "Each step adds the next readings and recomputes the forecasts with the evaluation's code",
+    "t_video": 18.6
+   },
+   {
+    "t": 30.3,
+    "caption": "08:22: the reading is 79.5 mg/dL, just above this fold's 79 threshold, so no alert",
+    "t_video": 33.9
+   },
+   {
+    "t": 39.5,
+    "caption": "08:37: 67 mg/dL. The low began without a warning, so the evaluation counts it as missed",
+    "t_video": 43.1
+   },
+   {
+    "t": 54.9,
+    "caption": "Jump to 75 minutes before a night-time low in the same period: 02:37, reading 79.5",
+    "t_video": 59.1
+   },
+   {
+    "t": 64.1,
+    "caption": "02:52 at night: 76 mg/dL is at or below 79, so the rule alerts. The forecasts expected a rise",
+    "t_video": 68.2
+   },
+   {
+    "t": 76.8,
+    "caption": "Revealed for scoring only, never given to the model: the reading kept falling",
+    "t_video": 81.3
+   },
+   {
+    "t": 84.4,
+    "caption": "The low began at 03:52, so the evaluation scored this alert as matched, 60 minutes ahead",
+    "t_video": 89.1
+   },
+   {
+    "t": 92.4,
+    "caption": "Parity: the live forecast equals the evaluation's stored prediction for this moment",
+    "t_video": 97.1
+   },
+   {
+    "t": 104.3,
+    "caption": "03:52: the low has begun. No repeat alert during the low or within the 60-minute cooldown",
+    "t_video": 109.4
+   },
+   {
+    "t": 117.3,
+    "caption": "Sensor dropout: with the last 45 minutes missing, the twin says unavailable instead of guessing",
+    "t_video": 122.8
+   },
+   {
+    "t": 134.4,
+    "caption": "A synthetic GLP-1 start fires the dose-review rule; it does not refit the physiology",
+    "t_video": 140.2
+   },
+   {
+    "t": 153.2,
+    "caption": "Reset: the clock returns to the end of the 5-day calibration; nothing carries over",
+    "t_video": 159.0
+   }
+  ]
+ },
+ "clinic_tour": {
+  "file": "docs/demo_2_clinic_tour.mp4",
+  "duration_s": 121.1,
+  "cues": [
+   {
+    "t": 4.7,
+    "caption": "Clinic list (synthetic patients): review triggers and safety notes, judged as of the demo date",
+    "t_video": 6.1
+   },
+   {
+    "t": 18.3,
+    "caption": "Meena (synthetic): medicines and dated records; each trigger shows its reason and label note",
+    "t_video": 19.8
+   },
+   {
+    "t": 44.0,
+    "caption": "Dose scenarios: options side by side on her core, under stated assumptions (illustrative)",
+    "t_video": 46.1
+   },
+   {
+    "t": 64.4,
+    "caption": "More process noise: the ranking holds, but the percentages move with the assumption",
+    "t_video": 67.1
+   },
+   {
+    "t": 78.5,
+    "caption": "Evidence: retrospective results against baselines, including the negative findings",
+    "t_video": 81.6
+   },
+   {
+    "t": 98.8,
+    "caption": "Example record shapes: a FHIR-style bundle and smartwatch data (display only, not validated)",
+    "t_video": 101.9
+   }
+  ]
+ }
+}

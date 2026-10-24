@@ -1,0 +1,252 @@
+{
+ "features": [
+  "g0",
+  "lag15",
+  "lag30",
+  "lag60",
+  "lag120",
+  "sd_2h",
+  "hour_sin",
+  "hour_cos",
+  "insulin_now",
+  "iob",
+  "su_now",
+  "glp1_now",
+  "carbs_now",
+  "cob",
+  "offset",
+  "age",
+  "bmi",
+  "hba1c",
+  "egfr",
+  "duration_years",
+  "c_peptide",
+  "male",
+  "on_su",
+  "on_insulin",
+  "twin_30",
+  "twin_60",
+  "twin_120",
+  "twin_min_120"
+ ],
+ "classifier_features": [
+  "g0",
+  "lag15",
+  "lag30",
+  "lag60",
+  "lag120",
+  "sd_2h",
+  "hour_sin",
+  "hour_cos",
+  "insulin_now",
+  "iob",
+  "su_now",
+  "glp1_now",
+  "carbs_now",
+  "cob",
+  "offset",
+  "age",
+  "bmi",
+  "hba1c",
+  "egfr",
+  "duration_years",
+  "c_peptide",
+  "male",
+  "on_su",
+  "on_insulin",
+  "twin_30",
+  "twin_60",
+  "twin_120",
+  "twin_min_120"
+ ],
+ "target": "change in mg/dL at the horizon",
+ "horizons_min": [
+  30,
+  60,
+  120
+ ],
+ "missing_values": "NaN, handled natively by LightGBM",
+ "fold_rule": "fold k model was trained on every patient NOT in fold k (results/folds.json)",
+ "thresholds_by_fold": {
+  "0": {
+   "current": {
+    "budget_0.5": 80.0,
+    "budget_1.0": 85.5,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "trend": {
+    "budget_0.5": 65.5,
+    "budget_1.0": 74.5,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "physiology": {
+    "budget_0.5": 84.0,
+    "budget_1.0": 88.5,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "ml": {
+    "budget_0.5": 85.0,
+    "budget_1.0": 89.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "hybrid": {
+    "budget_0.5": 84.5,
+    "budget_1.0": 89.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "classifier": {
+    "budget_0.5": 3.561125521944667e-05,
+    "budget_1.0": 5.863540165850087e-06
+   }
+  },
+  "1": {
+   "current": {
+    "budget_0.5": 77.5,
+    "budget_1.0": 83.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "trend": {
+    "budget_0.5": 63.0,
+    "budget_1.0": 72.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "physiology": {
+    "budget_0.5": 81.0,
+    "budget_1.0": 85.5,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "ml": {
+    "budget_0.5": 83.0,
+    "budget_1.0": 86.5,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "hybrid": {
+    "budget_0.5": 82.5,
+    "budget_1.0": 86.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "classifier": {
+    "budget_0.5": 5.7557762129202275e-05,
+    "budget_1.0": 8.80411511443186e-06
+   }
+  },
+  "2": {
+   "current": {
+    "budget_0.5": 77.0,
+    "budget_1.0": 83.5,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "trend": {
+    "budget_0.5": 63.0,
+    "budget_1.0": 72.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "physiology": {
+    "budget_0.5": 82.0,
+    "budget_1.0": 86.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "ml": {
+    "budget_0.5": 83.0,
+    "budget_1.0": 87.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "hybrid": {
+    "budget_0.5": 83.0,
+    "budget_1.0": 87.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "classifier": {
+    "budget_0.5": 4.546060311575928e-05,
+    "budget_1.0": 1.073470998496486e-05
+   }
+  },
+  "3": {
+   "current": {
+    "budget_0.5": 77.0,
+    "budget_1.0": 83.5,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "trend": {
+    "budget_0.5": 63.0,
+    "budget_1.0": 72.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "physiology": {
+    "budget_0.5": 81.5,
+    "budget_1.0": 86.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "ml": {
+    "budget_0.5": 81.5,
+    "budget_1.0": 85.5,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "hybrid": {
+    "budget_0.5": 81.5,
+    "budget_1.0": 85.5,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "classifier": {
+    "budget_0.5": 8.941157356779656e-05,
+    "budget_1.0": 1.6262983636946225e-05
+   }
+  },
+  "4": {
+   "current": {
+    "budget_0.5": 79.0,
+    "budget_1.0": 84.5,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "trend": {
+    "budget_0.5": 64.0,
+    "budget_1.0": 73.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "physiology": {
+    "budget_0.5": 83.0,
+    "budget_1.0": 87.5,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "ml": {
+    "budget_0.5": 82.5,
+    "budget_1.0": 87.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "hybrid": {
+    "budget_0.5": 83.0,
+    "budget_1.0": 87.0,
+    "fixed_85": 85.0,
+    "fixed_90": 90.0
+   },
+   "classifier": {
+    "budget_0.5": 3.530361685346298e-05,
+    "budget_1.0": 6.72960923138373e-06
+   }
+  }
+ }
+}

@@ -1,0 +1,240 @@
+{
+  "forecast": {
+    "30 min": {
+      "persistence": {
+        "rmse_mg_dl": 16.5,
+        "mard_percent": 7.7,
+        "clarke_a_plus_b_percent": 99.8,
+        "rmse_95ci": [
+          15.6,
+          17.4
+        ]
+      },
+      "twin": {
+        "rmse_mg_dl": 15.7,
+        "mard_percent": 7.6,
+        "clarke_a_plus_b_percent": 99.8
+      },
+      "ml": {
+        "rmse_mg_dl": 13.6,
+        "mard_percent": 6.9,
+        "clarke_a_plus_b_percent": 99.5
+      },
+      "hybrid": {
+        "rmse_mg_dl": 13.1,
+        "mard_percent": 6.7,
+        "clarke_a_plus_b_percent": 99.5,
+        "rmse_95ci": [
+          12.4,
+          13.9
+        ]
+      },
+      "points": 54757,
+      "patients": 94
+    },
+    "60 min": {
+      "persistence": {
+        "rmse_mg_dl": 27.5,
+        "mard_percent": 12.9,
+        "clarke_a_plus_b_percent": 99.2,
+        "rmse_95ci": [
+          25.9,
+          29.0
+        ]
+      },
+      "twin": {
+        "rmse_mg_dl": 25.1,
+        "mard_percent": 12.2,
+        "clarke_a_plus_b_percent": 99.2
+      },
+      "ml": {
+        "rmse_mg_dl": 24.1,
+        "mard_percent": 12.4,
+        "clarke_a_plus_b_percent": 99.0
+      },
+      "hybrid": {
+        "rmse_mg_dl": 23.0,
+        "mard_percent": 11.8,
+        "clarke_a_plus_b_percent": 99.1,
+        "rmse_95ci": [
+          21.8,
+          24.2
+        ]
+      },
+      "points": 54743,
+      "patients": 94
+    },
+    "120 min": {
+      "persistence": {
+        "rmse_mg_dl": 40.8,
+        "mard_percent": 20.2,
+        "clarke_a_plus_b_percent": 97.5,
+        "rmse_95ci": [
+          38.4,
+          43.3
+        ]
+      },
+      "twin": {
+        "rmse_mg_dl": 36.4,
+        "mard_percent": 17.7,
+        "clarke_a_plus_b_percent": 97.7
+      },
+      "ml": {
+        "rmse_mg_dl": 34.4,
+        "mard_percent": 18.4,
+        "clarke_a_plus_b_percent": 98.0
+      },
+      "hybrid": {
+        "rmse_mg_dl": 33.2,
+        "mard_percent": 17.5,
+        "clarke_a_plus_b_percent": 98.2,
+        "rmse_95ci": [
+          31.2,
+          35.6
+        ]
+      },
+      "points": 54715,
+      "patients": 94
+    }
+  },
+  "lows": {
+    "windows": 54405,
+    "windows_with_low_ahead": 205,
+    "test_days": 569.2,
+    "classifier_auroc": 0.866,
+    "classifier_auprc": 0.065,
+    "base_rate": 0.0038,
+    "classifier_auroc_95ci": [
+      0.827,
+      0.939
+    ],
+    "alarm_rules": {
+      "forecast 30 min ahead <= 85": {
+        "lows": 54,
+        "caught": 41,
+        "sensitivity_percent": 75.9,
+        "sensitivity_95ci": [
+          63.1,
+          85.4
+        ],
+        "median_warning_min": 15.0,
+        "false_alarms_per_day": 0.3
+      },
+      "forecast 30 min ahead <= 90": {
+        "lows": 54,
+        "caught": 50,
+        "sensitivity_percent": 92.6,
+        "sensitivity_95ci": [
+          82.4,
+          97.1
+        ],
+        "median_warning_min": 30.0,
+        "false_alarms_per_day": 0.53
+      },
+      "forecast 60 min ahead <= 95": {
+        "lows": 54,
+        "caught": 30,
+        "sensitivity_percent": 55.6,
+        "sensitivity_95ci": [
+          42.4,
+          68.0
+        ],
+        "median_warning_min": 45.0,
+        "false_alarms_per_day": 0.55
+      },
+      "classifier probability >= 0.001": {
+        "lows": 54,
+        "caught": 17,
+        "sensitivity_percent": 31.5,
+        "sensitivity_95ci": [
+          20.7,
+          44.7
+        ],
+        "median_warning_min": 15.0,
+        "false_alarms_per_day": 0.12
+      }
+    }
+  },
+  "cgm_off": {
+    "periods": 66,
+    "patients": 61,
+    "points": 33619,
+    "hours": 8404.8,
+    "carried": {
+      "rmse_mg_dl": 50.0,
+      "mard_percent": 25.4,
+      "clarke_a_plus_b_percent": 94.6
+    },
+    "typical": {
+      "rmse_mg_dl": 35.1,
+      "mard_percent": 18.5,
+      "clarke_a_plus_b_percent": 98.1
+    },
+    "twin": {
+      "rmse_mg_dl": 49.4,
+      "mard_percent": 21.0,
+      "clarke_a_plus_b_percent": 95.6
+    },
+    "hybrid": {
+      "rmse_mg_dl": 30.9,
+      "mard_percent": 16.1,
+      "clarke_a_plus_b_percent": 98.7
+    },
+    "hybrid_minus_carried_rmse_95ci": [
+      -23.8,
+      -14.4
+    ],
+    "readings_below_70": 196,
+    "below_70_flagged_under_80_percent": {
+      "carried": 2.6,
+      "typical": 6.6,
+      "twin": 6.1,
+      "hybrid": 3.6
+    },
+    "by_hours_since_fingerstick": [
+      {
+        "hours_since_fingerstick": "(-0.001, 2.0]",
+        "points": 11396,
+        "carried_rmse": 41.1,
+        "typical_rmse": 41.8,
+        "twin_rmse": 34.6,
+        "hybrid_rmse": 31.8
+      },
+      {
+        "hours_since_fingerstick": "(2.0, 4.0]",
+        "points": 4776,
+        "carried_rmse": 53.0,
+        "typical_rmse": 39.0,
+        "twin_rmse": 42.7,
+        "hybrid_rmse": 37.1
+      },
+      {
+        "hours_since_fingerstick": "(4.0, 8.0]",
+        "points": 4886,
+        "carried_rmse": 53.7,
+        "typical_rmse": 30.1,
+        "twin_rmse": 41.2,
+        "hybrid_rmse": 28.9
+      },
+      {
+        "hours_since_fingerstick": "(8.0, 12.0]",
+        "points": 2546,
+        "carried_rmse": 62.6,
+        "typical_rmse": 28.2,
+        "twin_rmse": 46.0,
+        "hybrid_rmse": 26.7
+      },
+      {
+        "hours_since_fingerstick": "(12.0, 48.0]",
+        "points": 5150,
+        "carried_rmse": 51.7,
+        "typical_rmse": 27.8,
+        "twin_rmse": 59.9,
+        "hybrid_rmse": 29.1
+      }
+    ]
+  },
+  "periods_evaluated": 103,
+  "patients_evaluated": 94,
+  "prior_offset_mg_dl": 7.2
+}

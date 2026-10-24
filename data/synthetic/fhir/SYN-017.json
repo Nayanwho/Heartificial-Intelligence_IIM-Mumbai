@@ -1,0 +1,323 @@
+{
+ "resourceType": "Bundle",
+ "id": "SYN-017-record",
+ "type": "collection",
+ "meta": {
+  "lastUpdated": "2026-10-20T09:00:00+05:30"
+ },
+ "entry": [
+  {
+   "fullUrl": "urn:uuid:syn-017-patient-1",
+   "resource": {
+    "resourceType": "Patient",
+    "id": "SYN-017",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Patient"
+     ]
+    },
+    "identifier": [
+     {
+      "system": "https://example.org/synthetic",
+      "value": "SYN-017"
+     }
+    ],
+    "gender": "male",
+    "birthDate": "1959",
+    "address": [
+     {
+      "city": "Mumbai",
+      "country": "IN"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:syn-017-condition-1",
+   "resource": {
+    "resourceType": "Condition",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Condition"
+     ]
+    },
+    "subject": {
+     "reference": "urn:uuid:syn-017-patient-1"
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "44054006",
+       "display": "Diabetes mellitus type 2"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:syn-017-obs-1",
+   "resource": {
+    "resourceType": "Observation",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Observation"
+     ]
+    },
+    "status": "final",
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "4548-4",
+       "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "urn:uuid:syn-017-patient-1"
+    },
+    "effectiveDateTime": "2026-07-28",
+    "valueQuantity": {
+     "value": 8.7,
+     "unit": "%",
+     "system": "http://unitsofmeasure.org",
+     "code": "%"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:syn-017-obs-2",
+   "resource": {
+    "resourceType": "Observation",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Observation"
+     ]
+    },
+    "status": "final",
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "4548-4",
+       "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "urn:uuid:syn-017-patient-1"
+    },
+    "effectiveDateTime": "2026-10-17",
+    "valueQuantity": {
+     "value": 7.2,
+     "unit": "%",
+     "system": "http://unitsofmeasure.org",
+     "code": "%"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:syn-017-obs-3",
+   "resource": {
+    "resourceType": "Observation",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Observation"
+     ]
+    },
+    "status": "final",
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "62238-1",
+       "display": "GFR/BSA.pred [Volume Rate/Area] in SerPlBld by CKD-EPI"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "urn:uuid:syn-017-patient-1"
+    },
+    "effectiveDateTime": "2026-07-28",
+    "valueQuantity": {
+     "value": 74,
+     "unit": "mL/min/{1.73_m2}",
+     "system": "http://unitsofmeasure.org",
+     "code": "mL/min/{1.73_m2}"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:syn-017-obs-4",
+   "resource": {
+    "resourceType": "Observation",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/Observation"
+     ]
+    },
+    "status": "final",
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "62238-1",
+       "display": "GFR/BSA.pred [Volume Rate/Area] in SerPlBld by CKD-EPI"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "urn:uuid:syn-017-patient-1"
+    },
+    "effectiveDateTime": "2026-10-17",
+    "valueQuantity": {
+     "value": 72,
+     "unit": "mL/min/{1.73_m2}",
+     "system": "http://unitsofmeasure.org",
+     "code": "mL/min/{1.73_m2}"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:syn-017-obs-5",
+   "resource": {
+    "resourceType": "Observation",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/ObservationBodyMeasurement"
+     ]
+    },
+    "status": "final",
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "29463-7",
+       "display": "Body weight"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "urn:uuid:syn-017-patient-1"
+    },
+    "effectiveDateTime": "2026-07-28",
+    "valueQuantity": {
+     "value": 75.6,
+     "unit": "kg",
+     "system": "http://unitsofmeasure.org",
+     "code": "kg"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:syn-017-obs-6",
+   "resource": {
+    "resourceType": "Observation",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/ObservationBodyMeasurement"
+     ]
+    },
+    "status": "final",
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "29463-7",
+       "display": "Body weight"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "urn:uuid:syn-017-patient-1"
+    },
+    "effectiveDateTime": "2026-10-17",
+    "valueQuantity": {
+     "value": 71.6,
+     "unit": "kg",
+     "system": "http://unitsofmeasure.org",
+     "code": "kg"
+    }
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:syn-017-med-1",
+   "resource": {
+    "resourceType": "MedicationStatement",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/MedicationStatement"
+     ]
+    },
+    "status": "active",
+    "subject": {
+     "reference": "urn:uuid:syn-017-patient-1"
+    },
+    "medicationCodeableConcept": {
+     "text": "glimepiride"
+    },
+    "effectivePeriod": {
+     "start": "2022-01-10"
+    },
+    "dosage": [
+     {
+      "text": "2 mg twice daily, before breakfast and dinner"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:syn-017-med-2",
+   "resource": {
+    "resourceType": "MedicationStatement",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/MedicationStatement"
+     ]
+    },
+    "status": "active",
+    "subject": {
+     "reference": "urn:uuid:syn-017-patient-1"
+    },
+    "medicationCodeableConcept": {
+     "text": "metformin"
+    },
+    "effectivePeriod": {
+     "start": "2020-05-01"
+    },
+    "dosage": [
+     {
+      "text": "500 mg twice daily"
+     }
+    ]
+   }
+  },
+  {
+   "fullUrl": "urn:uuid:syn-017-med-3",
+   "resource": {
+    "resourceType": "MedicationStatement",
+    "meta": {
+     "profile": [
+      "https://nrces.in/ndhm/fhir/r4/StructureDefinition/MedicationStatement"
+     ]
+    },
+    "status": "active",
+    "subject": {
+     "reference": "urn:uuid:syn-017-patient-1"
+    },
+    "medicationCodeableConcept": {
+     "text": "semaglutide"
+    },
+    "effectivePeriod": {
+     "start": "2026-10-03"
+    },
+    "dosage": [
+     {
+      "text": "0.5 mg once weekly"
+     }
+    ]
+   }
+  }
+ ]
+}

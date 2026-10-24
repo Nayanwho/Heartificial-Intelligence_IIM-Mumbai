@@ -1,0 +1,398 @@
+{
+ "persona": "SYN-001",
+ "seed_period": "2045_0_20201216",
+ "days": 14,
+ "n_sims": 300,
+ "default_assumptions": {
+  "appetite_cut": 0.3,
+  "sensitivity_gain": 0.15,
+  "su_action_factor": 1.4,
+  "su_exposure": 1.0,
+  "fasting_dates": [
+   "2026-10-22"
+  ]
+ },
+ "note": "Simulated, comparative and uncalibrated. Not treatment-effect estimates.",
+ "before_changes": {
+  "Keep current doses": {
+   "simulated_nights_with_low_percent": 0.2,
+   "time_in_range_percent": 46,
+   "time_above_180_percent": 54,
+   "mean_glucose_mg_dl": 189
+  }
+ },
+ "by_noise_factor": {
+  "0.25": {
+   "Keep current doses": {
+    "simulated_nights_with_low_percent": 100.0,
+    "time_in_range_percent": 61,
+    "time_above_180_percent": 5,
+    "mean_glucose_mg_dl": 103
+   },
+   "Halve the evening sulfonylurea": {
+    "simulated_nights_with_low_percent": 0.0,
+    "time_in_range_percent": 81,
+    "time_above_180_percent": 16,
+    "mean_glucose_mg_dl": 135
+   },
+   "Stop the evening sulfonylurea": {
+    "simulated_nights_with_low_percent": 0.0,
+    "time_in_range_percent": 64,
+    "time_above_180_percent": 36,
+    "mean_glucose_mg_dl": 167
+   },
+   "Halve every sulfonylurea dose": {
+    "simulated_nights_with_low_percent": 0.0,
+    "time_in_range_percent": 59,
+    "time_above_180_percent": 41,
+    "mean_glucose_mg_dl": 167
+   }
+  },
+  "0.5": {
+   "Keep current doses": {
+    "simulated_nights_with_low_percent": 99.0,
+    "time_in_range_percent": 62,
+    "time_above_180_percent": 6,
+    "mean_glucose_mg_dl": 104
+   },
+   "Halve the evening sulfonylurea": {
+    "simulated_nights_with_low_percent": 7.5,
+    "time_in_range_percent": 80,
+    "time_above_180_percent": 17,
+    "mean_glucose_mg_dl": 135
+   },
+   "Stop the evening sulfonylurea": {
+    "simulated_nights_with_low_percent": 0.0,
+    "time_in_range_percent": 63,
+    "time_above_180_percent": 36,
+    "mean_glucose_mg_dl": 167
+   },
+   "Halve every sulfonylurea dose": {
+    "simulated_nights_with_low_percent": 0.1,
+    "time_in_range_percent": 59,
+    "time_above_180_percent": 41,
+    "mean_glucose_mg_dl": 167
+   }
+  },
+  "1.0": {
+   "Keep current doses": {
+    "simulated_nights_with_low_percent": 93.9,
+    "time_in_range_percent": 64,
+    "time_above_180_percent": 8,
+    "mean_glucose_mg_dl": 108
+   },
+   "Halve the evening sulfonylurea": {
+    "simulated_nights_with_low_percent": 32.8,
+    "time_in_range_percent": 74,
+    "time_above_180_percent": 19,
+    "mean_glucose_mg_dl": 136
+   },
+   "Stop the evening sulfonylurea": {
+    "simulated_nights_with_low_percent": 1.1,
+    "time_in_range_percent": 61,
+    "time_above_180_percent": 37,
+    "mean_glucose_mg_dl": 167
+   },
+   "Halve every sulfonylurea dose": {
+    "simulated_nights_with_low_percent": 8.2,
+    "time_in_range_percent": 58,
+    "time_above_180_percent": 41,
+    "mean_glucose_mg_dl": 167
+   }
+  }
+ },
+ "one_at_a_time": {
+  "appetite_cut": {
+   "0.15": {
+    "Keep current doses": {
+     "simulated_nights_with_low_percent": 96.4,
+     "time_in_range_percent": 57,
+     "time_above_180_percent": 16,
+     "mean_glucose_mg_dl": 120
+    },
+    "Halve the evening sulfonylurea": {
+     "simulated_nights_with_low_percent": 3.0,
+     "time_in_range_percent": 66,
+     "time_above_180_percent": 31,
+     "mean_glucose_mg_dl": 151
+    },
+    "Stop the evening sulfonylurea": {
+     "simulated_nights_with_low_percent": 0.0,
+     "time_in_range_percent": 51,
+     "time_above_180_percent": 48,
+     "mean_glucose_mg_dl": 183
+    },
+    "Halve every sulfonylurea dose": {
+     "simulated_nights_with_low_percent": 0.0,
+     "time_in_range_percent": 49,
+     "time_above_180_percent": 51,
+     "mean_glucose_mg_dl": 183
+    }
+   },
+   "0.3": {
+    "Keep current doses": {
+     "simulated_nights_with_low_percent": 99.0,
+     "time_in_range_percent": 62,
+     "time_above_180_percent": 6,
+     "mean_glucose_mg_dl": 104
+    },
+    "Halve the evening sulfonylurea": {
+     "simulated_nights_with_low_percent": 7.5,
+     "time_in_range_percent": 80,
+     "time_above_180_percent": 17,
+     "mean_glucose_mg_dl": 135
+    },
+    "Stop the evening sulfonylurea": {
+     "simulated_nights_with_low_percent": 0.0,
+     "time_in_range_percent": 63,
+     "time_above_180_percent": 36,
+     "mean_glucose_mg_dl": 167
+    },
+    "Halve every sulfonylurea dose": {
+     "simulated_nights_with_low_percent": 0.1,
+     "time_in_range_percent": 59,
+     "time_above_180_percent": 41,
+     "mean_glucose_mg_dl": 167
+    }
+   },
+   "0.45": {
+    "Keep current doses": {
+     "simulated_nights_with_low_percent": 99.9,
+     "time_in_range_percent": 61,
+     "time_above_180_percent": 0,
+     "mean_glucose_mg_dl": 89
+    },
+    "Halve the evening sulfonylurea": {
+     "simulated_nights_with_low_percent": 16.7,
+     "time_in_range_percent": 92,
+     "time_above_180_percent": 4,
+     "mean_glucose_mg_dl": 119
+    },
+    "Stop the evening sulfonylurea": {
+     "simulated_nights_with_low_percent": 0.0,
+     "time_in_range_percent": 80,
+     "time_above_180_percent": 19,
+     "mean_glucose_mg_dl": 151
+    },
+    "Halve every sulfonylurea dose": {
+     "simulated_nights_with_low_percent": 0.3,
+     "time_in_range_percent": 75,
+     "time_above_180_percent": 25,
+     "mean_glucose_mg_dl": 151
+    }
+   }
+  },
+  "sensitivity_gain": {
+   "0.075": {
+    "Keep current doses": {
+     "simulated_nights_with_low_percent": 94.1,
+     "time_in_range_percent": 66,
+     "time_above_180_percent": 9,
+     "mean_glucose_mg_dl": 112
+    },
+    "Halve the evening sulfonylurea": {
+     "simulated_nights_with_low_percent": 2.7,
+     "time_in_range_percent": 77,
+     "time_above_180_percent": 21,
+     "mean_glucose_mg_dl": 141
+    },
+    "Stop the evening sulfonylurea": {
+     "simulated_nights_with_low_percent": 0.0,
+     "time_in_range_percent": 60,
+     "time_above_180_percent": 39,
+     "mean_glucose_mg_dl": 171
+    },
+    "Halve every sulfonylurea dose": {
+     "simulated_nights_with_low_percent": 0.0,
+     "time_in_range_percent": 56,
+     "time_above_180_percent": 44,
+     "mean_glucose_mg_dl": 171
+    }
+   },
+   "0.15": {
+    "Keep current doses": {
+     "simulated_nights_with_low_percent": 99.0,
+     "time_in_range_percent": 62,
+     "time_above_180_percent": 6,
+     "mean_glucose_mg_dl": 104
+    },
+    "Halve the evening sulfonylurea": {
+     "simulated_nights_with_low_percent": 7.5,
+     "time_in_range_percent": 80,
+     "time_above_180_percent": 17,
+     "mean_glucose_mg_dl": 135
+    },
+    "Stop the evening sulfonylurea": {
+     "simulated_nights_with_low_percent": 0.0,
+     "time_in_range_percent": 63,
+     "time_above_180_percent": 36,
+     "mean_glucose_mg_dl": 167
+    },
+    "Halve every sulfonylurea dose": {
+     "simulated_nights_with_low_percent": 0.1,
+     "time_in_range_percent": 59,
+     "time_above_180_percent": 41,
+     "mean_glucose_mg_dl": 167
+    }
+   },
+   "0.225": {
+    "Keep current doses": {
+     "simulated_nights_with_low_percent": 100.0,
+     "time_in_range_percent": 59,
+     "time_above_180_percent": 3,
+     "mean_glucose_mg_dl": 97
+    },
+    "Halve the evening sulfonylurea": {
+     "simulated_nights_with_low_percent": 16.6,
+     "time_in_range_percent": 81,
+     "time_above_180_percent": 14,
+     "mean_glucose_mg_dl": 129
+    },
+    "Stop the evening sulfonylurea": {
+     "simulated_nights_with_low_percent": 0.0,
+     "time_in_range_percent": 66,
+     "time_above_180_percent": 32,
+     "mean_glucose_mg_dl": 163
+    },
+    "Halve every sulfonylurea dose": {
+     "simulated_nights_with_low_percent": 0.2,
+     "time_in_range_percent": 62,
+     "time_above_180_percent": 38,
+     "mean_glucose_mg_dl": 163
+    }
+   }
+  },
+  "su_half_life": {
+   "1.0": {
+    "Keep current doses": {
+     "simulated_nights_with_low_percent": 18.2,
+     "time_in_range_percent": 74,
+     "time_above_180_percent": 22,
+     "mean_glucose_mg_dl": 139
+    },
+    "Halve the evening sulfonylurea": {
+     "simulated_nights_with_low_percent": 0.0,
+     "time_in_range_percent": 64,
+     "time_above_180_percent": 35,
+     "mean_glucose_mg_dl": 162
+    },
+    "Stop the evening sulfonylurea": {
+     "simulated_nights_with_low_percent": 0.0,
+     "time_in_range_percent": 50,
+     "time_above_180_percent": 50,
+     "mean_glucose_mg_dl": 185
+    },
+    "Halve every sulfonylurea dose": {
+     "simulated_nights_with_low_percent": 0.0,
+     "time_in_range_percent": 48,
+     "time_above_180_percent": 52,
+     "mean_glucose_mg_dl": 185
+    }
+   },
+   "1.2": {
+    "Keep current doses": {
+     "simulated_nights_with_low_percent": 75.6,
+     "time_in_range_percent": 72,
+     "time_above_180_percent": 13,
+     "mean_glucose_mg_dl": 121
+    },
+    "Halve the evening sulfonylurea": {
+     "simulated_nights_with_low_percent": 0.4,
+     "time_in_range_percent": 73,
+     "time_above_180_percent": 25,
+     "mean_glucose_mg_dl": 149
+    },
+    "Stop the evening sulfonylurea": {
+     "simulated_nights_with_low_percent": 0.0,
+     "time_in_range_percent": 57,
+     "time_above_180_percent": 43,
+     "mean_glucose_mg_dl": 176
+    },
+    "Halve every sulfonylurea dose": {
+     "simulated_nights_with_low_percent": 0.0,
+     "time_in_range_percent": 53,
+     "time_above_180_percent": 47,
+     "mean_glucose_mg_dl": 176
+    }
+   },
+   "1.4": {
+    "Keep current doses": {
+     "simulated_nights_with_low_percent": 99.0,
+     "time_in_range_percent": 62,
+     "time_above_180_percent": 6,
+     "mean_glucose_mg_dl": 104
+    },
+    "Halve the evening sulfonylurea": {
+     "simulated_nights_with_low_percent": 7.5,
+     "time_in_range_percent": 80,
+     "time_above_180_percent": 17,
+     "mean_glucose_mg_dl": 135
+    },
+    "Stop the evening sulfonylurea": {
+     "simulated_nights_with_low_percent": 0.0,
+     "time_in_range_percent": 63,
+     "time_above_180_percent": 36,
+     "mean_glucose_mg_dl": 167
+    },
+    "Halve every sulfonylurea dose": {
+     "simulated_nights_with_low_percent": 0.1,
+     "time_in_range_percent": 59,
+     "time_above_180_percent": 41,
+     "mean_glucose_mg_dl": 167
+    }
+   },
+   "1.8": {
+    "Keep current doses": {
+     "simulated_nights_with_low_percent": 100.0,
+     "time_in_range_percent": 50,
+     "time_above_180_percent": 0,
+     "mean_glucose_mg_dl": 79
+    },
+    "Halve the evening sulfonylurea": {
+     "simulated_nights_with_low_percent": 80.0,
+     "time_in_range_percent": 74,
+     "time_above_180_percent": 5,
+     "mean_glucose_mg_dl": 109
+    },
+    "Stop the evening sulfonylurea": {
+     "simulated_nights_with_low_percent": 0.0,
+     "time_in_range_percent": 74,
+     "time_above_180_percent": 23,
+     "mean_glucose_mg_dl": 149
+    },
+    "Halve every sulfonylurea dose": {
+     "simulated_nights_with_low_percent": 4.4,
+     "time_in_range_percent": 70,
+     "time_above_180_percent": 29,
+     "mean_glucose_mg_dl": 149
+    }
+   }
+  }
+ },
+ "without_planned_fast": {
+  "Keep current doses": {
+   "simulated_nights_with_low_percent": 99.0,
+   "time_in_range_percent": 66,
+   "time_above_180_percent": 6,
+   "mean_glucose_mg_dl": 108
+  },
+  "Halve the evening sulfonylurea": {
+   "simulated_nights_with_low_percent": 6.8,
+   "time_in_range_percent": 81,
+   "time_above_180_percent": 18,
+   "mean_glucose_mg_dl": 139
+  },
+  "Stop the evening sulfonylurea": {
+   "simulated_nights_with_low_percent": 0.0,
+   "time_in_range_percent": 62,
+   "time_above_180_percent": 38,
+   "mean_glucose_mg_dl": 171
+  },
+  "Halve every sulfonylurea dose": {
+   "simulated_nights_with_low_percent": 0.0,
+   "time_in_range_percent": 56,
+   "time_above_180_percent": 44,
+   "mean_glucose_mg_dl": 171
+  }
+ }
+}

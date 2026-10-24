@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Santulan presentation</title>
+<style>
+  @page { size: 1600px 900px; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #fff; font-family: "DejaVu Sans", Arial, sans-serif; color: #1f2933; }
+  .slide { width: 1600px; height: 900px; padding: 50px 64px 40px; position: relative; page-break-after: always; overflow: hidden; }
+  .kicker { font-size: 15px; font-weight: 700; letter-spacing: 2px; color: #2a78d6; text-transform: uppercase; }
+  h1 { font-size: 40px; line-height: 1.15; margin: 10px 0 8px; color: #0b0b0b; }
+  h2 { font-size: 23px; margin: 0 0 8px; color: #0b0b0b; }
+  .sub { font-size: 20px; color: #52514e; margin-bottom: 22px; line-height: 1.35; }
+  .foot { position: absolute; left: 64px; right: 64px; bottom: 20px; font-size: 12.5px; color: #8d8c86; display: flex; justify-content: space-between; }
+  .grid { display: grid; gap: 20px; }
+  .g2 { grid-template-columns: 1fr 1fr; } .g3 { grid-template-columns: repeat(3, 1fr); } .g4 { grid-template-columns: repeat(4, 1fr); }
+  .card { border: 1.5px solid #e2e1dc; border-radius: 12px; padding: 18px 22px; background: #fff; }
+  .card.blue { background: #eef4fc; border-color: #2a78d6; } .card.orange { background: #fff4ec; border-color: #eb6834; }
+  .card.gray { background: #f6f6f4; border-color: #c9c8c2; border-style: dashed; }
+  .big { font-size: 52px; font-weight: 800; color: #0b0b0b; line-height: 1.05; }
+  .big.blue { color: #2a78d6; } .big.orange { color: #c2410c; }
+  .label { font-size: 19.5px; color: #1f2933; margin-top: 8px; line-height: 1.35; }
+  .src { font-size: 13.5px; color: #8d8c86; margin-top: 8px; }
+  ul { margin: 6px 0 0 0; padding-left: 22px; } li { font-size: 20px; line-height: 1.42; margin-bottom: 7px; }
+  img.fig { width: 100%; border-radius: 8px; }
+  table { border-collapse: collapse; width: 100%; font-size: 19px; }
+  th, td { text-align: left; padding: 9px 11px; border-bottom: 1px solid #e2e1dc; }
+  th { color: #52514e; font-weight: 700; font-size: 14.5px; }
+  td.num, th.num { text-align: right; } tr.hl td { font-weight: 700; color: #0b0b0b; background: #eef4fc; }
+  .chip { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 12.5px; font-weight: 800; letter-spacing: 0.8px; margin-left: 6px; vertical-align: middle; }
+  .chip.impl { background: #2a78d6; color: #fff; } .chip.illu { background: #eb6834; color: #fff; } .chip.prop { background: #8d8c86; color: #fff; }
+  .cover { background: linear-gradient(135deg, #0f2747 0%, #1e5fae 100%); color: #fff; padding: 76px 90px; }
+  .cover h1 { color: #fff; font-size: 58px; margin-top: 26px; } .cover .sub { color: #dbe8fa; font-size: 25px; }
+  .wcard { background: rgba(255,255,255,0.08); border: 1.5px solid rgba(255,255,255,0.3); border-radius: 12px; padding: 20px 22px; color: #fff; }
+</style>
+</head>
+<body>
+
+<!-- 1 Cover -->
+<section class="slide cover">
+  <div class="kicker" style="color:#9cc3ef">Happiest Health Digital Twin Challenge 2026 · Phase 1</div>
+  <h1>Santulan</h1>
+  <div class="sub" style="max-width:1250px">A research prototype for clinician-led diabetes dose review: a digital twin that brings a patient's body changes and CGM history together, with forecasts evaluated on real held-out patients and dose scenarios whose assumptions are stated</div>
+  <svg width="1420" height="250" viewBox="0 0 1420 250" style="margin-top:18px">
+    <path d="M0 110 C120 50, 200 30, 300 100 S480 200, 560 140 S720 20, 820 110 S1000 230, 1080 218 S1260 210, 1420 216" fill="none" stroke="#f3a07a" stroke-width="5"/>
+    <path d="M0 110 C120 50, 200 30, 300 100 S480 200, 560 140 S720 20, 820 110 S1000 165, 1100 150 S1280 138, 1420 140" fill="none" stroke="#9cc3ef" stroke-width="5"/>
+    <line x1="0" y1="195" x2="1420" y2="195" stroke="#ffffff" stroke-opacity="0.5" stroke-dasharray="8 8"/>
+    <text x="1180" y="186" fill="#ffffff" font-size="17" opacity="0.8">70 mg/dL</text>
+    <text x="1040" y="244" fill="#f3a07a" font-size="17">unchanged dose (simulated): night low</text>
+    <text x="1060" y="128" fill="#9cc3ef" font-size="17">step-down option (simulated)</text>
+  </svg>
+  <div style="position:absolute;left:90px;bottom:64px;font-size:22px">Team Heartificial Intelligence · Shubham Sunil Patil, Adarsh Nayan · IIM Mumbai</div>
+  <div style="position:absolute;left:90px;bottom:32px;font-size:16px;color:#dbe8fa">Code, data and results on GitHub: Heartificial-Intelligence_IIM-Mumbai</div>
+</section>
+
+<!-- 2 Problem -->
+<section class="slide autofit">
+  <div class="kicker">The problem</div>
+  <h1>Millions of Indians take the two diabetes drug classes that can push sugar dangerously low</h1>
+  <div class="sub">Sulfonylureas and insulin are India's workhorse drugs. When the body changes, the same dose can become too strong</div>
+  <div class="body">
+  <div class="grid g4">
+    <div class="card"><div class="big">10.1 cr</div><div class="label">Indian adults with diabetes</div><div class="src">ICMR-INDIAB 2023</div></div>
+    <div class="card"><div class="big">2.5 cr</div><div class="label">take a sulfonylurea or insulin: about half are treated, half of those on these drugs</div><div class="src">LANDMARC, 6,234 patients</div></div>
+    <div class="card orange"><div class="big orange">25 lakh</div><div class="label">severe lows a year: our estimate of the problem's size (range 13 to 48 lakh), not a prototype result</div><div class="src">Meta-analysis of 5.3 lakh people: 5% a year on SU, 21% on insulin</div></div>
+    <div class="card"><div class="big">48 of 164</div><div class="label">drug-reaction admissions at KEM Hospital, Mumbai, were sulfonylurea reactions</div><div class="src">JCDR 2022</div></div>
+  </div>
+  <div class="grid g3" style="margin-top:22px">
+    <div class="card"><h2>Lows are often silent</h2><div class="label">In older adults wearing a sensor, 80 to 100% of lows went unnoticed. HbA1c can read "well controlled" while nights go low.</div><div class="src">Systematic review, UEA</div></div>
+    <div class="card"><h2>Lows harm</h2><div class="label">Severe lows are linked to dementia, and in the LEADER trial to a higher risk of death.</div><div class="src">JAMA 2009; LEADER</div></div>
+    <div class="card"><h2>Lows are common</h2><div class="label">8.9% of insulin-treated Type 2 patients had a severe low in just four weeks; South-East Asia, including India, was among the highest.</div><div class="src">Global HAT study, 2016</div></div>
+  </div>
+  </div>
+  <div class="foot"><span>Santulan · Problem</span><span>Sources in the README</span></div>
+</section>
+
+<!-- 3 What it is -->
+<section class="slide autofit">
+  <div class="kicker">What Santulan is</div>
+  <h1>A working twin for the dose review, with every part labelled by how far it is proven</h1>
+  <div class="sub">A physiology core fitted to each person, population models evaluated on held-out patients, stated review rules and illustrative scenarios</div>
+  <div class="body">
+  <div class="grid g3">
+    <div class="card blue"><h2>Calibrate <span class="chip impl">IMPLEMENTED</span></h2><div class="label">A fixed 5-day CGM window fits the person's physiology core and freezes their sensor offset from calibration fingersticks.</div></div>
+    <div class="card blue"><h2>Forecast <span class="chip impl">EVALUATED</span></h2><div class="label">30, 60 and 120-minute glucose forecasts on real held-out patients, against honest baselines.</div></div>
+    <div class="card blue"><h2>Low alert <span class="chip impl">EVALUATED</span></h2><div class="label">A simple rule on the corrected reading, because no model beat it at the same alert budget.</div></div>
+    <div class="card orange"><h2>Review rules <span class="chip illu">RULES</span></h2><div class="label">GLP-1 start, weight loss, planned fast, eGFR below 60; G6PD, CYP2C9 and age notes, each with its label note.</div></div>
+    <div class="card orange"><h2>Dose scenarios <span class="chip illu">ILLUSTRATIVE</span></h2><div class="label">Step-down options compared on the person's core, with assumptions on sliders and their sensitivity shown.</div></div>
+    <div class="card orange"><h2>Sensor-off <span class="chip illu">EXPERIMENTAL</span></h2><div class="label">Glucose estimation from doses, meals and fingersticks; tracks the level, cannot detect lows.</div></div>
+  </div>
+  <div class="card" style="margin-top:20px;font-size:18px">Live replay steps a real held-out patient through time with the same code as the evaluation. Smartwatch data are display only; FHIR records are example shapes; quarterly sensing is proposed. <b>The doctor decides; the software never changes a dose.</b></div>
+  </div>
+  <div class="foot"><span>Santulan · What it is</span><span>README: status table</span></div>
+</section>
+
+<!-- 4 Live replay -->
+<section class="slide autofit">
+  <div class="kicker">The twin in action</div>
+  <h1>Live replay: a real held-out patient, stepped through time with the evaluation's own code</h1>
+  <div class="sub">Only records up to the replay clock are used; the forecast model was trained without this patient</div>
+  <div class="body">
+  <div class="grid g2" style="grid-template-columns: 1.3fr 1fr">
+    <img class="fig" src="screenshots/0_replay.png" style="border:1px solid #e2e1dc">
+    <div>
+      <div class="card orange"><h2>02:52, an hour before a night low</h2><div class="label" style="margin-top:4px">76 mg/dL is at or below the fold's 79 threshold, so the simple rule alerts; the forecasts expected a rise. The low began at 03:52. An earlier low was missed.</div></div>
+      <div class="card blue" style="margin-top:14px"><h2>What updates when</h2><ul>
+        <li>Each step adds new CGM readings, doses and meals</li>
+        <li>Offset and core are fitted once on calibration, not refitted online</li></ul></div>
+      <div class="card" style="margin-top:14px"><h2>Checks you can see</h2><ul>
+        <li>Forecasts equal the evaluation's stored predictions</li>
+        <li>Stale or missing CGM shows "unavailable", not a guess</li>
+        <li>A synthetic GLP-1 start changes the review rule, not the physiology</li></ul></div>
+    </div>
+  </div>
+  </div>
+  <div class="foot"><span>Santulan · Live replay</span><span>twin/replay.py; tests/test_replay.py</span></div>
+</section>
+
+<!-- 5 Why now -->
+<section class="slide autofit">
+  <div class="kicker">Why now</div>
+  <h1>In 2026 the body changes faster than the prescription</h1>
+  <div class="sub">Four common changes can make a previously right sulfonylurea or insulin dose too strong, and doses rarely come down</div>
+  <div class="body">
+  <div class="grid g4">
+    <div class="card orange"><h2>GLP-1 start</h2><div class="big orange">17 to 24%</div><div class="label">have lows on semaglutide plus a sulfonylurea, against 2 to 4% alone; the label advises considering a lower dose. Generic semaglutide reached India in March 2026.</div><div class="src">Drug label rates; South First</div></div>
+    <div class="card orange"><h2>Weight loss</h2><div class="big orange">5%+</div><div class="label">raises insulin sensitivity, so the same tablet can lower sugar further. Wellness success is exactly when doses may need review.</div><div class="src">Project Khushi pilot: 59% lost weight</div></div>
+    <div class="card orange"><h2>Fasting</h2><div class="big orange">Fast days</div><div class="label">Meals move or vanish on fasting days; doses often do not.</div><div class="src">JSHD 2015; IJEM 2017</div></div>
+    <div class="card orange"><h2>Kidney function</h2><div class="big orange">eGFR &lt; 60</div><div class="label">The glimepiride label advises a 1 mg start and conservative titration; its metabolites accumulate as kidney function falls.</div><div class="src">US glimepiride label</div></div>
+  </div>
+  <div class="card blue" style="margin-top:22px;display:flex;align-items:center;gap:30px">
+    <div class="big blue" style="min-width:280px">9.4 to 16.9%</div>
+    <div class="label" style="font-size:19px">Among 89,987 US adults aged 65 and over, 48% were already below their sugar goal, yet only 9.4% (2019) to 16.9% (2023) had treatment reduced. Clinicians need structured support to decide when a dose should come down.</div>
+  </div>
+  </div>
+  <div class="foot"><span>Santulan · Why now</span><span>JAMA Internal Medicine, via Drug Topics; US glimepiride label</span></div>
+</section>
+
+<!-- 6 Gap -->
+<section class="slide autofit">
+  <div class="kicker">The gap</div>
+  <h1>Low prediction already exists; structured support for the dose decision does not</h1>
+  <div class="sub">Santulan aims at the medication review: which body changes happened, what the CGM shows, and how step-down options compare</div>
+  <div class="body">
+  <div class="grid g2">
+    <div>
+      <div class="card"><h2>Prediction is already a product</h2><div class="label">Roche's SmartGuide app predicts lows 30 minutes ahead, glucose 2 hours ahead and overnight risk on a sensor worn continuously. On sale in the Gulf; we found no India launch.</div><div class="src">Roche UK; BioSpectrum Asia</div></div>
+      <div class="card" style="margin-top:18px"><h2>Whole-body twin programmes exist</h2><div class="label">Twin Health runs a paid remission programme first trialled in India. It is not a clinician's dose-review tool for sulfonylurea and insulin users.</div><div class="src">ADA 2022 report; NEJM Catalyst via pharmaphorum</div></div>
+      <div class="card orange" style="margin-top:18px"><h2>Where Santulan fits</h2><div class="label">Not another low predictor: support for the review a physician does when a body change makes a dose questionable, with the evidence behind each part stated.</div></div>
+    </div>
+    <div class="card blue">
+      <h2>What 28 public challenge entries do (keyword scan, 14 Oct)</h2>
+      <table style="margin-top:8px">
+        <tr><td>Type 2 glucose twins</td><td class="num"><b>12</b></td></tr>
+        <tr><td>What-if simulators</td><td class="num"><b>18</b></td></tr>
+        <tr><td>Watch for GLP-1, weight-loss or fasting changes</td><td class="num"><b>0</b></td></tr>
+        <tr><td>Test the twin with the sensor off</td><td class="num"><b>0</b></td></tr>
+        <tr><td>Use CYP2C9 or G6PD for sulfonylureas</td><td class="num"><b>0</b></td></tr>
+        <tr><td>Mention sensor artefacts at all</td><td class="num"><b>1</b></td></tr>
+      </table>
+      <div class="label" style="margin-top:12px">Indicative counts from a keyword scan of entries public on one day. Santulan's own results on these points are shown in this deck, including where they are negative.</div>
+    </div>
+  </div>
+  </div>
+  <div class="foot"><span>Santulan · The gap</span><span>Aggregate counts only</span></div>
+</section>
+
+<!-- 7 Architecture -->
+<section class="slide" style="padding-top:36px">
+  <div class="kicker">Architecture</div>
+  <img class="fig" src="figures/architecture.png" style="width:1255px;display:block;margin:6px auto 0">
+  <div class="foot"><span>Santulan · Architecture</span><span>docs/architecture.pdf</span></div>
+</section>
+
+<!-- 8 Protocol -->
+<section class="slide autofit">
+  <div class="kicker">How we evaluate</div>
+  <h1>An audit found our first evaluation let later data in; version 2 is leak-free</h1>
+  <div class="sub">76 real patients, 85 sensor periods, 538 monitored days (ShanghaiT2DM, open data). Protocol frozen before running; tests enforce it</div>
+  <div class="body">
+  <div class="grid g2">
+    <div class="card orange"><h2>What version 1 got wrong</h2><ul>
+      <li>Sensor offset used fingersticks from later days</li>
+      <li>The offset prior included the patients being tested</li>
+      <li>Missing meals and the calibration length looked at the whole period</li>
+      <li>Sensor-off mode started from a hidden CGM reading</li>
+      <li>Alarm hits and false alarms were scored by different rules</li></ul>
+      <div class="label" style="margin-top:10px">Its results are kept, labelled superseded, and not quoted.</div></div>
+    <div class="card blue"><h2>What version 2 does</h2><ul>
+      <li>Fixed 5-day calibration per person; offset, meals and core from those days only</li>
+      <li>Population models, offset prior and alert thresholds fitted on training patients only (5 patient folds)</li>
+      <li>One alert policy; one-to-one matching; false alerts only with observed follow-up</li>
+      <li>Honest baselines: no change, recent trend, physiology only, ML without physiology</li>
+      <li>Tests check that later data cannot change an earlier output</li></ul></div>
+  </div>
+  <div class="grid g4" style="margin-top:20px">
+    <div class="card"><div class="big" style="font-size:42px">5 days</div><div class="label">fixed calibration per person, after a 24-hour warm-up</div></div>
+    <div class="card"><div class="big" style="font-size:42px">5 folds</div><div class="label">of patients; population models never saw the patient, who is personalised only by their own 5 days</div></div>
+    <div class="card"><div class="big" style="font-size:42px">53 lows</div><div class="label">CGM-defined episodes in 20 held-out patients</div></div>
+    <div class="card orange"><div class="big orange" style="font-size:42px">Retrospective</div><div class="label">same patients as version 1: development evidence, not independent validation</div></div>
+  </div>
+  </div>
+  <div class="foot"><span>Santulan · Evaluation protocol</span><span>docs/evaluation_protocol.md; results/manifest.json</span></div>
+</section>
+
+<!-- 9 Sensor check -->
+<section class="slide autofit">
+  <div class="kicker">Real data, descriptive check</div>
+  <h1>The sensor read 12 mg/dL low; a whole-period offset correction changes low episodes from 294 to 99</h1>
+  <div class="sub">ShanghaiT2DM: 100 adults, 109 sensor periods, 112,287 readings, 3,262 fingersticks</div>
+  <div class="body">
+  <div class="grid g2" style="grid-template-columns: 1.25fr 1fr">
+    <img class="fig" src="figures/sensor_check.png">
+    <div>
+      <div class="grid g2">
+        <div class="card"><div class="big" style="font-size:44px">12 mg/dL</div><div class="label">sensor below fingersticks, across 2,883 pairs</div></div>
+        <div class="card"><div class="big" style="font-size:44px">7 of 53</div><div class="label">paired sensor readings below 70 (fingerstick within 8 minutes) were confirmed below 70</div></div>
+      </div>
+      <div class="card blue" style="margin-top:16px"><h2>What the twin does</h2><ul>
+        <li>Drops each sensor's first 24 hours</li>
+        <li>Learns the offset from calibration fingersticks only, then freezes it</li>
+        <li>Counts a low only after 15 minutes below 70</li></ul></div>
+      <div class="src">Descriptive and whole-period. Sparse fingersticks do not establish true lows. A US hospital study found a 12.8 mg/dL bias for this sensor family (Diabetes Care 2020).</div>
+    </div>
+  </div>
+  </div>
+  <div class="foot"><span>Santulan · Sensor check</span><span>results/data_check.json</span></div>
+</section>
+
+<!-- 10 Forecasts -->
+<section class="slide">
+  <div class="kicker">Real data, forecasts</div>
+  <h1>Two hours ahead, the hybrid twin's error is 20% below assuming no change</h1>
+  <div class="sub">Held-out patients after a 5-day personal calibration; every method scored on the same origins</div>
+  <img class="fig" src="figures/forecast_accuracy.png" style="width:1340px;display:block;margin:0 auto">
+  <div class="grid g4" style="margin-top:12px">
+    <div class="card blue"><div class="big blue" style="font-size:40px">32.6</div><div class="label">mg/dL hybrid error at 2 hours (95% CI 30.2 to 35.1)</div></div>
+    <div class="card"><div class="big" style="font-size:40px">40.7</div><div class="label">mg/dL for "no change"; 36.4 for the physiology core alone</div></div>
+    <div class="card"><div class="big" style="font-size:40px">13.2 / 23.0</div><div class="label">mg/dL hybrid error at 30 and 60 minutes</div></div>
+    <div class="card orange"><div class="big orange" style="font-size:40px">68.5</div><div class="label">mg/dL for a straight-line trend: worse than no change</div></div>
+  </div>
+  <div class="foot"><span>Santulan · Forecasts</span><span>results/evaluation.json</span></div>
+</section>
+
+<!-- 11 Ingredients -->
+<section class="slide">
+  <div class="kicker">What each ingredient adds</div>
+  <h1>The physiology core improves forecasts; the clinical record does not</h1>
+  <div class="sub">Paired comparisons on identical patients and origins, with patient-level bootstrap intervals</div>
+  <img class="fig" src="figures/ingredients.png" style="width:1420px;display:block;margin:0 auto">
+  <div class="grid g2" style="margin-top:14px">
+    <div class="card blue"><div class="label" style="margin:0"><b>Physiology core:</b> adding it lowers 2-hour error by 2.2 mg/dL to machine learning without the record, and by 1.1 mg/dL in the full hybrid; both intervals exclude zero. This is the twin's measured contribution.</div></div>
+    <div class="card orange"><div class="label" style="margin:0"><b>Clinical record:</b> once the twin is calibrated, it makes forecasts slightly worse at 30 and 60 minutes and no different at 2 hours. Its job is the review rules: medicines, eGFR, weight, genetics and fasting plans decide who is flagged.</div></div>
+  </div>
+  <div class="foot"><span>Santulan · Ablation</span><span>results/evaluation.json: paired_differences</span></div>
+</section>
+
+<!-- 12 Alerts -->
+<section class="slide">
+  <div class="kicker">Real data, low alerts</div>
+  <h1>At the same alert budget, a simple rule caught 43 of 53 lows; the hybrid caught 29 of 53</h1>
+  <div class="sub">53 CGM-defined episodes in 20 held-out patients; thresholds set on training patients; one-to-one matching, 60-minute window and cooldown</div>
+  <img class="fig" src="figures/alarm_comparison.png" style="width:1170px;display:block;margin:0 auto">
+  <div class="grid g3" style="margin-top:12px">
+    <div class="card blue"><h2>So the prototype alerts on the simple rule</h2><div class="label">Corrected reading at or below 77 to 80 mg/dL (set per fold on training patients), 60-minute cooldown; forecasts shown for context.</div></div>
+    <div class="card"><h2>Mixed and fragile</h2><div class="label">On raw CGM the hybrid caught 88 of 149 against 73. Small pipeline fixes moved the hybrid from 36 to 29 of 53; the simple rule stayed at 43.</div></div>
+    <div class="card orange"><h2>Rare events</h2><div class="label">Classifier AUROC 0.83 but AUPRC 0.11 at 0.39% prevalence. Episodes are sensor-defined, not severe clinical events.</div></div>
+  </div>
+  <div class="foot"><span>Santulan · Low alerts</span><span>results/evaluation.json: alarms</span></div>
+</section>
+
+<!-- 13 Sensor off -->
+<section class="slide autofit">
+  <div class="kicker">Experimental: sensor-off estimation</div>
+  <h1>With the CGM off, estimates track the level (29.6 mg/dL) but not the lows</h1>
+  <div class="sub">After calibration the core sees only doses, meals and fingersticks; hidden CGM is used only for scoring</div>
+  <div class="body">
+  <div class="grid g2" style="grid-template-columns: 1.45fr 1fr">
+    <img class="fig" src="figures/sensor_off.png">
+    <div>
+      <div class="grid g2">
+        <div class="card blue"><div class="big blue" style="font-size:44px">29.6</div><div class="label">mg/dL RMSE, against 33.6 for the person's typical day and 52.2 for the last fingerstick</div></div>
+        <div class="card orange"><div class="big orange" style="font-size:44px">1 of 213</div><div class="label">readings below 70 were estimated below 80</div></div>
+      </div>
+      <div class="card orange" style="margin-top:16px"><h2>Scope</h2><ul>
+        <li>Acute low alerts are not available without a CGM</li>
+        <li>At most 8.0 days per period tested, in 46 patients</li>
+        <li>The twin alone drifts after 2 days; the learning layer leans on the person's typical day</li>
+        <li>Quarterly sensing between periods is a proposal for a pilot, not a result</li></ul></div>
+    </div>
+  </div>
+  </div>
+  <div class="foot"><span>Santulan · Sensor-off</span><span>results/evaluation.json: sensor_off</span></div>
+</section>
+
+<!-- 14 Scenario -->
+<section class="slide">
+  <div class="kicker">Illustrative dose scenarios</div>
+  <h1>Meena's scenario ranks the options, but its percentages swing with the assumptions</h1>
+  <div class="sub">Meena, 62 (synthetic): glimepiride-metformin twice daily, semaglutide for 6 weeks, 5% weight lost, eGFR 72 to 58; physiology copied from one real patient</div>
+  <img class="fig" src="figures/scenario_sensitivity.png" style="width:1250px;display:block;margin:0 auto">
+  <div class="grid g3" style="margin-top:12px">
+    <div class="card"><div class="label" style="margin:0"><b>Default assumptions:</b> keep doses 99% of simulated nights with a low; halve the evening dose 7.5%; stop it 0%.</div></div>
+    <div class="card orange"><div class="label" style="margin:0"><b>But:</b> halving the evening dose ranges from 0% to 33% across noise settings and reaches 80% under a stronger kidney assumption; without it, unchanged doses give 18%.</div></div>
+    <div class="card"><div class="label" style="margin:0"><b>Regimen:</b> twice-daily glimepiride-metformin combinations are common in India (7,058 patients, 347 sites); the US label specifies once daily. The doctor decides.</div></div>
+  </div>
+  <div class="foot"><span>Santulan · Scenarios</span><span>results/scenario_sensitivity.json</span></div>
+</section>
+
+<!-- 15 Use case and pilot -->
+<section class="slide autofit">
+  <div class="kicker">Healthcare use case</div>
+  <h1>A medication-review tool for the clinics that start GLP-1s and see older patients</h1>
+  <div class="sub">We claim no prevented lows or savings; a prospective pilot would measure them</div>
+  <div class="body">
+  <div class="grid g3">
+    <div class="card"><h2>The physician's workflow</h2><ul>
+      <li>A review rule flags the record, with its reason</li>
+      <li>CGM history, forecasts and the simple alert</li>
+      <li>Step-down options compared under stated assumptions</li>
+      <li>The physician decides; a new sensor period recalibrates</li></ul></div>
+    <div class="card blue"><h2>Where it could be piloted</h2><ul>
+      <li>Endocrinology and Your Personal Physician clinic, Koramangala</li>
+      <li>The planned obesity clinic, where GLP-1 starts happen</li>
+      <li>Healthy Ageing, where older adults on sulfonylureas are</li>
+      <li>Project Khushi: wellness success is when doses may need review</li></ul></div>
+    <div class="card orange"><h2>What a pilot must show</h2><ul>
+      <li>Severe lows needing assistance</li>
+      <li>CGM time below 70 mg/dL</li>
+      <li>Dose reductions made and their outcomes</li>
+      <li>False-alert burden and clinician acceptance</li>
+      <li>Body-change effects fitted on Indian patients</li></ul></div>
+  </div>
+  <div class="card" style="margin-top:20px;font-size:18px">Fit with Happiest Health: labs from Happiest Diagnostics could seed the calibration; records modelled on ABDM FHIR shapes could carry consented data later; "Probe. Predict. Prevent.": the twin supports the Predict.</div>
+  </div>
+  <div class="foot"><span>Santulan · Use case</span><span>Happiest Health clinic launch, July 2026; Project Khushi report</span></div>
+</section>
+
+<!-- 16 Data, safety, limits -->
+<section class="slide autofit">
+  <div class="kicker">Data, safety, limits and reproducibility</div>
+  <h1>Open data, stated limits, and every number regenerated by code</h1>
+  <div class="sub">What judges can rerun, and what a pilot must still prove</div>
+  <div class="body">
+  <div class="grid g3">
+    <div class="card"><h2>Data</h2><ul>
+      <li>ShanghaiT2DM: 100 real adults, CC BY 4.0 (public mirror matching the paper)</li>
+      <li>24 synthetic Indian patients for the demo; never used to grade a model</li>
+      <li>Smartwatch data display only; FHIR files are example shapes</li></ul></div>
+    <div class="card"><h2>Safety</h2><ul>
+      <li>Decision support only; no dose is changed by software</li>
+      <li>Rules cite label notes; scenarios labelled illustrative</li>
+      <li>No personal data; consent under the DPDP Rules needed for real use</li>
+      <li>Apache-2.0</li></ul></div>
+    <div class="card orange"><h2>Limits</h2><ul>
+      <li>53 CGM-defined lows in 20 patients: wide intervals</li>
+      <li>Chinese adults; Indian calibration needed</li>
+      <li>Retrospective development evidence</li>
+      <li>Scenario effects are assumptions</li></ul></div>
+  </div>
+  <div class="card blue" style="margin-top:20px">
+    <h2>Rerun everything</h2>
+    <div style="font-family: 'DejaVu Sans Mono', monospace; font-size:16px; line-height:1.55">pip install -r requirements-lock.txt<br>python scripts/run_all.py &nbsp;&nbsp;&nbsp;# every result, summary and figure, about 15 to 20 minutes<br>python -m pytest -q tests &nbsp;&nbsp;&nbsp;# causality, alert matching, replay parity, document consistency<br>streamlit run app/dashboard.py</div>
+  </div>
+  </div>
+  <div class="foot"><span>Santulan · Data and limits</span><span>README: How to run; Reproducibility</span></div>
+</section>
+
+<!-- 17 Close -->
+<section class="slide cover">
+  <div class="kicker" style="color:#9cc3ef">Santulan</div>
+  <h1 style="font-size:50px;max-width:1350px">A working, honestly evaluated twin for the dose review; a clinical pilot is the next test</h1>
+  <div class="grid g3" style="margin-top:36px">
+    <div class="wcard"><div class="big" style="color:#fff">20%</div><div class="label" style="color:#dbe8fa">lower 2-hour forecast error than no change (32.6 vs 40.7 mg/dL), on 76 held-out patients</div></div>
+    <div class="wcard"><div class="big" style="color:#fff">2.2 mg/dL</div><div class="label" style="color:#dbe8fa">the physiology core's 2-hour gain without the clinical record (1.1 in the full hybrid); the record drives the review rules instead</div></div>
+    <div class="wcard"><div class="big" style="color:#fff">Leak-free</div><div class="label" style="color:#dbe8fa">protocol, fair baselines, negative results published, and a live replay that matches the evaluation's stored predictions</div></div>
+  </div>
+  <div class="grid g3" style="margin-top:20px">
+    <div class="wcard"><h2 style="color:#fff">Shown on real data</h2><div class="label" style="color:#dbe8fa">Forecasts and the simple low alert, on 76 held-out patients; the replay matches them</div></div>
+    <div class="wcard"><h2 style="color:#fff">Not yet proven</h2><div class="label" style="color:#dbe8fa">Dose scenarios and review rules are illustrative; sensor-off cannot detect lows; no outcome is claimed</div></div>
+    <div class="wcard"><h2 style="color:#fff">What a pilot needs</h2><div class="label" style="color:#dbe8fa">Consented Indian CGM and clinic data, a partner clinic, and endpoints fixed in advance</div></div>
+  </div>
+  <div style="position:absolute;left:90px;bottom:64px;font-size:22px">Team Heartificial Intelligence · Shubham Sunil Patil, Adarsh Nayan · IIM Mumbai</div>
+  <div style="position:absolute;left:90px;bottom:32px;font-size:16px;color:#dbe8fa">GitHub: Heartificial-Intelligence_IIM-Mumbai</div>
+</section>
+
+<script>
+/* Sparse slides: enlarge the text below the subtitle until it reaches the footer line (at most 1.3x).
+   Headline numbers (.big) keep their size so they stay on one line.
+   It runs in the browser and in the Chromium render that produces presentation.pdf. */
+window.addEventListener("load", function () {
+  document.querySelectorAll("section.slide.autofit").forEach(function (slide) {
+    var body = slide.querySelector(".body"), limit = 842;
+    var els = Array.prototype.slice.call(body.querySelectorAll("*")).filter(function (e) { return e.tagName !== "IMG" && e.tagName !== "BR" && !e.closest(".big"); });
+    var base = els.map(function (e) { return parseFloat(getComputedStyle(e).fontSize); });
+    function apply(f) { els.forEach(function (e, i) { e.style.fontSize = (base[i] * f).toFixed(2) + "px"; }); }
+    function bottom() {
+      var top = slide.getBoundingClientRect().top, m = 0;
+      body.querySelectorAll("*").forEach(function (e) { m = Math.max(m, e.getBoundingClientRect().bottom - top); });
+      return m;
+    }
+    var f = 1.0;
+    while (f < 1.3) { apply(f + 0.01); if (bottom() > limit) { apply(f); break; } f += 0.01; }
+    slide.setAttribute("data-fit", f.toFixed(2));
+  });
+});
+</script>
+</body>
+</html>
